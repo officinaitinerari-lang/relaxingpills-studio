@@ -1,0 +1,5 @@
+# Parole che la voce pronuncia male: scrivi come vanno lette (grafia fonetica inglese).
+# Si aggiorna quando il controllo a campione della domenica trova un errore.
+words:
+  insulae: "insoo-lye"
+  daimyo: "dime-yo"

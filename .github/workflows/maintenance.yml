@@ -1,0 +1,36 @@
+name: Manutenzione canale
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "Operazione"
+        type: choice
+        options: [verify, playlists, branding, unlist-old]
+        default: verify
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install pyyaml google-api-python-client google-auth
+      - run: python -m studio.maintenance ${{ github.event.inputs.action }}
+      - name: Salva gli ID delle playlist
+        if: github.event.inputs.action == 'playlists'
+        run: |
+          git config user.name "relaxingpills-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add config/playlists.yaml
+          git diff --cached --quiet || (git commit -m "ID playlist [skip ci]" && git push -q)

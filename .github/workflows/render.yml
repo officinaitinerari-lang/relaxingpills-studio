@@ -1,0 +1,92 @@
+name: Montaggio e caricamento
+
+on:
+  push:
+    branches: [main]
+    paths: ["episodes/**", "config/**", "studio/**"]
+  schedule:
+    - cron: "23 4 * * *"   # ogni notte riprova eventuali episodi rimasti indietro
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Slug dell'episodio (vuoto = tutti quelli pronti)"
+        required: false
+      no_upload:
+        description: "Solo prova, senza caricare su YouTube"
+        type: boolean
+        default: false
+
+concurrency:
+  group: render
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      RP_MODEL_DIR: ${{ github.workspace }}/.models
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Strumenti video
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+
+      - name: Modelli voce (cache)
+        uses: actions/cache@v4
+        with:
+          path: .models
+          key: kokoro-v1.0
+
+      - name: Dipendenze
+        run: pip install -r requirements.txt
+
+      - name: Costruisci e carica
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.episode }}" ]; then ARGS="$ARGS --episode ${{ github.event.inputs.episode }}"; fi
+          if [ "${{ github.event.inputs.no_upload }}" = "true" ]; then ARGS="$ARGS --no-upload"; fi
+          python -m studio.run $ARGS
+
+      - name: Anteprime (miniature, Shorts, primi 3 minuti)
+        if: always()
+        run: |
+          mkdir -p preview
+          for d in build/*/; do
+            s=$(basename "$d"); [ "$s" = "_image_cache" ] && continue
+            cp "$d"/thumbnail.* "$d"/report.json "$d"/description.txt preview/ 2>/dev/null || true
+            for f in "$d"/*-short*.mp4; do [ -f "$f" ] && cp "$f" preview/; done
+            [ -f "$d/$s.mp4" ] && ffmpeg -loglevel error -y -i "$d/$s.mp4" -t 180 -c copy "preview/$s-primi-3-minuti.mp4" || true
+            for f in report.json description.txt; do [ -f "preview/$f" ] && mv "preview/$f" "preview/$s-$f"; done
+            for f in preview/thumbnail.*; do [ -f "$f" ] && mv "$f" "preview/$s-$(basename $f)"; done
+          done
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: anteprime
+          path: preview/
+          retention-days: 14
+          if-no-files-found: ignore
+
+      - name: Salva lo stato dei caricamenti
+        if: always()
+        run: |
+          git config user.name "relaxingpills-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add episodes/*/published.json config/playlists.yaml 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Stato caricamenti [skip ci]"
+            git pull --rebase -q && git push -q
+          fi

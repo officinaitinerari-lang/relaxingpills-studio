@@ -1,0 +1,76 @@
+# Relaxing Pills — impostazioni del canale e della produzione.
+# Deciso una volta (8 nov 2026). Cambiare solo durante la sessione settimanale.
+
+channel:
+  handle: "@RelaxingPills92"
+  channel_id: "UCpJl7l-YWb9SA15ces2pBPw"
+  language: en
+  user_agent: "RelaxingPillsStudio/1.0 (github.com/relaxingpills-studio; automated video builder)"
+
+voice:
+  model_url: "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx"
+  voices_url: "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin"
+  voice: am_michael
+  lang: en-us
+  speed_long: 0.88
+  speed_shorts: 1.0
+  pause_sentence: 0.35      # secondi tra frasi
+  pause_paragraph: 1.1      # tra paragrafi
+  pause_chapter: 2.6        # tra capitoli
+  intro_silence: 1.5
+  outro_silence: 6.0
+
+video:
+  width: 1920
+  height: 1080
+  fps: 24
+  crf: 23
+  preset: veryfast
+  overscale: 1.12           # margine per la panoramica lenta
+  fade: 1.4                 # dissolvenza al nero tra le scene (s)
+  brightness: 0.86          # leggermente scuro: video per dormire
+  saturation: 0.9
+
+shorts:
+  width: 1080
+  height: 1920
+  overscale: 1.08
+  caption_font: Anton
+  caption_size: 112
+  music_db: -24
+  target_lufs: -14
+
+audio:
+  music_db: -27             # musica sotto la voce
+  target_lufs: -19
+
+images:
+  min_width: 1200
+  # Licenze accettate. Le CC BY / BY-SA richiedono attribuzione: finiscono nella descrizione.
+  allowed_licenses: ["public domain", "pd", "cc0", "cc by", "cc-by", "no restrictions"]
+  prefer_public_domain: true
+  max_fallback_ratio: 0.15  # oltre questa quota di immagini mancanti il video non parte
+
+publish:
+  timezone: Europe/Rome
+  category_id: "27"         # Education
+  made_for_kids: false
+  contains_synthetic_media: false
+  min_hours_ahead: 2
+  default_tags: ["history for sleep", "science for sleep", "sleep documentary", "calm narration", "relaxing history", "bedtime stories for adults", "fall asleep", "relaxing pills"]
+  footer: |
+    🌙 Relaxing Pills — calm history & science for sleep. New episodes every week.
+    Narration is AI-assisted; research and scripts are original and sourced below.
+    Images: public-domain and openly licensed works (credits below).
+
+qa:
+  long_min_minutes: 45
+  long_max_minutes: 180
+  shorts_min_seconds: 20
+  shorts_max_seconds: 59
+  lufs_tolerance: 2.5
+  max_silence_seconds: 9
+  max_image_seconds: 150
+
+run:
+  max_long_per_run: 2
