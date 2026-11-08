@@ -149,11 +149,22 @@ class ImageFinder:
         return c
 
     def _commons_search(self, q: str, landscape: bool) -> dict | None:
-        res = self._commons_query({
-            "generator": "search", "gsrsearch": f"{q} filetype:bitmap",
-            "gsrnamespace": 6, "gsrlimit": 30,
-        })
-        return self._pick(res, landscape)
+        words = q.split()
+        # se la ricerca è troppo specifica, la allarga togliendo l'ultima parola
+        while words:
+            res = self._commons_query({
+                "generator": "search", "gsrsearch": f"{' '.join(words)} filetype:bitmap",
+                "gsrnamespace": 6, "gsrlimit": 30,
+            })
+            pick = self._pick(res, landscape)
+            if pick:
+                if len(words) < len(q.split()):
+                    print(f"  ricerca allargata: '{q}' → '{' '.join(words)}'")
+                return pick
+            if len(words) <= 2:
+                break
+            words = words[:-1]
+        return None
 
     # ------------------------------------------------------------------ nasa
     def _nasa_search(self, q: str, landscape: bool) -> dict | None:

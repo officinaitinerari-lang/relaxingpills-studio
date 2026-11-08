@@ -61,8 +61,12 @@ jobs:
 
       - name: Anteprime (miniature, Shorts, primi 3 minuti)
         if: always()
+        shell: bash
         run: |
+          set +e
+          shopt -s nullglob
           mkdir -p preview
+          [ -d build ] || exit 0
           for d in build/*/; do
             s=$(basename "$d"); [ "$s" = "_image_cache" ] && continue
             cp "$d"/thumbnail.* "$d"/report.json "$d"/description.txt preview/ 2>/dev/null || true
@@ -71,6 +75,24 @@ jobs:
             for f in report.json description.txt; do [ -f "preview/$f" ] && mv "preview/$f" "preview/$s-$f"; done
             for f in preview/thumbnail.*; do [ -f "$f" ] && mv "$f" "preview/$s-$(basename $f)"; done
           done
+          exit 0
+
+      - name: Provini sul branch "anteprime"
+        if: always()
+        shell: bash
+        run: |
+          set +e
+          [ -d build ] || exit 0
+          python -m studio.contact build provini || exit 0
+          cp preview/*-report.json preview/*-description.txt provini/ 2>/dev/null
+          ls provini/* >/dev/null 2>&1 || exit 0
+          cd provini
+          git init -q -b anteprime
+          git config user.name "relaxingpills-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A && git commit -qm "Provini $(date -u +%F_%H%M)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" anteprime
+          exit 0
 
       - uses: actions/upload-artifact@v4
         if: always()
