@@ -123,8 +123,13 @@ def main() -> int:
     from . import youtube as Y
     from .build import build_episode
     from .tts import Narrator
-    upload = not a.no_upload and Y.has_credentials()
-    if not a.no_upload and not upload:
+    api_ok = bool(cfg["publish"].get("api_upload_enabled", False))
+    upload = not a.no_upload and Y.has_credentials() and api_ok
+    manual = not a.no_upload and not api_ok
+    if manual:
+        summary("ℹ️ Caricamento via API disattivato (verifica Google in corso): il video finito va nella Release GitHub "
+                "e si carica a mano da YouTube Studio.")
+    elif not a.no_upload and not upload:
         if not a.episode:
             summary("Credenziali YouTube non ancora configurate: nessun montaggio automatico. "
                     "Per una prova lancia il workflow a mano con 'Solo prova'.")
@@ -149,6 +154,14 @@ def main() -> int:
             summary("❌ Controlli non superati: niente caricamento.")
             failed += 1
             continue
+        if manual:
+            out_dir = Path(rep["outputs"]["long"]).parent
+            (out_dir / "MANUAL_RELEASE").write_text(ep.name, encoding="utf-8")
+            st = load_state(ep)
+            st.update({"mode": "manual", "complete": True,
+                       "release": ep.name, "built_at": datetime.now(timezone.utc).isoformat(timespec="seconds")})
+            save_state(ep, st)
+            summary(f"- Pronto per il caricamento manuale: Release '{ep.name}' su GitHub")
         if upload:
             try:
                 upload_episode(ep, rep, cfg)

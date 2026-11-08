@@ -59,6 +59,24 @@ jobs:
           if [ "${{ github.event.inputs.no_upload }}" = "true" ]; then ARGS="$ARGS --no-upload"; fi
           python -m studio.run $ARGS
 
+      - name: Release per il caricamento manuale
+        if: always()
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          shopt -s nullglob
+          for m in build/*/MANUAL_RELEASE; do
+            d=$(dirname "$m"); s=$(basename "$d")
+            gh release view "$s" >/dev/null 2>&1 && continue
+            files=("$d/$s.mp4" "$d"/thumbnail.* "$d/$s.en.srt" "$d/description.txt" "$d"/$s-short*.mp4)
+            gh release create "$s" "${files[@]}" --title "Episodio $s" \
+              --notes "Video pronto da caricare su YouTube Studio. Titolo, data di uscita e testi: episodes/$s/. Descrizione completa: description.txt." \
+              && echo "Release creata: $s"
+          done
+          exit 0
+
       - name: Anteprime (miniature, Shorts, primi 3 minuti)
         if: always()
         shell: bash

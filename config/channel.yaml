@@ -52,6 +52,10 @@ images:
   max_fallback_ratio: 0.15  # oltre questa quota di immagini mancanti il video non parte
 
 publish:
+  # Finché Google non approva la verifica dell'API, i video caricati via API restano BLOCCATI come privati
+  # (non si possono rendere pubblici). Quindi: false = il video finito va in una Release GitHub
+  # e Matteo lo carica da YouTube Studio. Mettere true solo dopo l'email di approvazione di Google.
+  api_upload_enabled: false
   timezone: Europe/Rome
   category_id: "27"         # Education
   made_for_kids: false
