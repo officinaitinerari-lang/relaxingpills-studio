@@ -123,11 +123,15 @@ def main() -> int:
     from . import youtube as Y
     from .build import build_episode
     from .tts import Narrator
-    narrator = Narrator(cfg)
     upload = not a.no_upload and Y.has_credentials()
     if not a.no_upload and not upload:
+        if not a.episode:
+            summary("Credenziali YouTube non ancora configurate: nessun montaggio automatico. "
+                    "Per una prova lancia il workflow a mano con 'Solo prova'.")
+            return 0
         summary("⚠️ Credenziali YouTube assenti: costruisco senza caricare.")
 
+    narrator = Narrator(cfg)
     failed = 0
     for ep in eps:
         summary(f"## {ep.name}")
