@@ -5,7 +5,7 @@ channel:
   handle: "@RelaxingPills92"
   channel_id: "UCpJl7l-YWb9SA15ces2pBPw"
   language: en
-  user_agent: "RelaxingPillsStudio/1.0 (github.com/relaxingpills-studio; automated video builder)"
+  user_agent: "RelaxingPillsStudio/1.1 (https://github.com/officinaitinerari-lang/relaxingpills-studio; https://officinaitinerari-lang.github.io/relaxingpills-studio/) python-requests"
 
 voice:
   model_url: "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx"

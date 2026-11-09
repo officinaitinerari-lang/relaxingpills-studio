@@ -280,5 +280,8 @@ def measure_loudness(path: Path) -> float:
 def longest_silence(path: Path, noise_db: int = -45, min_d: float = 2.0) -> float:
     p = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", str(path), "-af",
                         f"silencedetect=noise={noise_db}dB:d={min_d}", "-f", "null", "-"], capture_output=True, text=True)
-    ds = [float(x) for x in re.findall(r"silence_duration: ([\d.]+)", p.stderr)]
+    # ignora il silenzio finale voluto (outro): conta solo i silenzi che finiscono prima della coda del file
+    total = probe_duration(path)
+    ds = [float(d) for e, d in re.findall(r"silence_end: ([\d.]+) \| silence_duration: ([\d.]+)", p.stderr)
+          if float(e) < total - 1.0]
     return max(ds) if ds else 0.0

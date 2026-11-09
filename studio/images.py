@@ -50,8 +50,32 @@ class ImageFinder:
         self.min_width = icfg["min_width"]
         self.allowed = [a.lower() for a in icfg["allowed_licenses"]]
         self.prefer_pd = icfg.get("prefer_public_domain", True)
+        self._min_gap = 1.2
+        self._last = 0.0
 
     # ------------------------------------------------------------------ util
+    def _get(self, url: str, params: dict | None = None, timeout: int = 60):
+        """GET educata: almeno 1,2 s tra una richiesta e l'altra, ritenta su 429/5xx rispettando Retry-After."""
+        import time
+        for attempt in range(6):
+            wait = self._min_gap - (time.monotonic() - self._last)
+            if wait > 0:
+                time.sleep(wait)
+            self._last = time.monotonic()
+            try:
+                r = self.s.get(url, params=params, timeout=timeout)
+            except requests.RequestException:
+                time.sleep(3 * (attempt + 1))
+                continue
+            if r.status_code == 429 or r.status_code >= 500:
+                ra = r.headers.get("Retry-After", "")
+                delay = int(ra) if ra.isdigit() else 5 * (attempt + 1)
+                time.sleep(min(delay, 60))
+                continue
+            return r
+        r.raise_for_status()
+        return r
+
     def _license_ok(self, lic: str) -> bool:
         l = (lic or "").lower()
         if not l or "nonfree" in l or "fair use" in l or "-nd" in l or " nd" in l or "-nc" in l or " nc" in l:
@@ -70,7 +94,7 @@ class ImageFinder:
             return str(dest)
         for _ in range(3):
             try:
-                r = self.s.get(url, timeout=60)
+                r = self._get(url)
                 if r.status_code == 200 and len(r.content) > 1000:
                     dest.write_bytes(r.content)
                     # verifica che sia un'immagine leggibile
@@ -88,7 +112,7 @@ class ImageFinder:
             "iiprop": "url|size|mime|extmetadata", "iiurlwidth": 2400,
         }
         base.update(params)
-        r = self.s.get(COMMONS_API, params=base, timeout=60)
+        r = self._get(COMMONS_API, params=base)
         r.raise_for_status()
         pages = r.json().get("query", {}).get("pages", {})
         items = sorted(pages.values(), key=lambda p: p.get("index", 0))
@@ -168,14 +192,14 @@ class ImageFinder:
 
     # ------------------------------------------------------------------ nasa
     def _nasa_search(self, q: str, landscape: bool) -> dict | None:
-        r = self.s.get(NASA_API, params={"q": q, "media_type": "image"}, timeout=60)
+        r = self._get(NASA_API, params={"q": q, "media_type": "image"})
         r.raise_for_status()
         items = r.json().get("collection", {}).get("items", [])[:25]
         for it in items:
             data = (it.get("data") or [{}])[0]
             nasa_id = data.get("nasa_id", "")
             try:
-                assets = self.s.get(it["href"], timeout=60).json()
+                assets = self._get(it["href"]).json()
             except Exception:
                 continue
             urls = [u for u in assets if isinstance(u, str) and u.lower().endswith((".jpg", ".jpeg", ".png"))]
