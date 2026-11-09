@@ -1,0 +1,60 @@
+# Parole chiave (vidIQ, 9 nov 2026): principale "ancient rome for sleep" (vol 61, concorrenza 18, +95%).
+# Secondarie: what was life like in ancient rome (comp 34, +54%), daily life in ancient rome, roman daily life,
+# roman history, history to fall asleep to
+status: ready
+pillar: history
+publish_at: "2026-12-01T00:00Z"
+keyword: "ancient rome for sleep"
+title: "What Was Life Really Like in Ancient Rome? | History for Sleep"
+description: |
+  Fall asleep to ancient Rome for sleep: one calm day from dawn to night — real history, softly told, for sleep, study or relaxation.
+
+  What was life like in ancient Rome? Tonight we follow one ordinary day in the great city of the emperors. We wake in a tall apartment block before sunrise, listen to the night carts on the stones, greet a patron in his quiet atrium and buy warm bread from a Roman bakery. This is daily life in ancient Rome, told slowly, without battles or drama.
+
+  We follow the water of the aqueducts to the street fountains, sit with children learning letters on wax tablets, walk through shops and the Forum, rest in the warm rooms of the Roman baths and recline at an evening dinner. A gentle piece of Roman history to fall asleep to, as the lamps go out and the city sleeps.
+tags: ["ancient rome for sleep", "daily life in ancient rome", "what was life like in ancient rome", "roman daily life", "life in ancient rome", "ancient rome", "roman history", "roman baths", "history for sleep", "sleep history", "history to fall asleep to", "learn history while you sleep", "sleep documentary", "calm narration"]
+hashtags: ["ancientrome", "romanhistory", "historyforsleep"]
+localizations:
+  es:
+    title: "¿Cómo era de verdad la vida en la antigua Roma? | Historia para dormir"
+    description: "Duérmete con un día tranquilo en la antigua Roma, del amanecer a la noche: historia real, contada con calma, para dormir, estudiar o relajarte. Pan caliente, acueductos, escuelas, termas y una cena romana."
+  pt:
+    title: "Como era de verdade a vida na Roma antiga? | História para dormir"
+    description: "Adormeça com um dia calmo na Roma antiga, do amanhecer à noite: história real, contada com suavidade, para dormir, estudar ou relaxar. Pão quente, aquedutos, escolas, termas e um jantar romano."
+  fr:
+    title: "À quoi ressemblait vraiment la vie dans la Rome antique ? | Histoire pour dormir"
+    description: "Endormez-vous avec une journée paisible dans la Rome antique, de l'aube à la nuit : de la vraie histoire, racontée en douceur, pour dormir, étudier ou se détendre. Pain chaud, aqueducs, écoles, thermes et dîner romain."
+  de:
+    title: "Wie war das Leben im antiken Rom wirklich? | Geschichte zum Einschlafen"
+    description: "Schlaf ein mit einem ruhigen Tag im antiken Rom, vom Morgengrauen bis zur Nacht: echte Geschichte, sanft erzählt, zum Schlafen, Lernen oder Entspannen. Warmes Brot, Aquädukte, Schulen, Thermen und ein römisches Abendessen."
+  it:
+    title: "Com'era davvero la vita nell'antica Roma? | Storia per dormire"
+    description: "Addormentati con una giornata tranquilla nell'antica Roma, dall'alba alla notte: storia vera, raccontata con calma, per dormire, studiare o rilassarti. Pane caldo, acquedotti, scuole, terme e una cena romana."
+thumbnail:
+  text: "One Calm Roman Day"
+  image: "commons:File:Alma-Tadema A Favourite Custom 1909 Tate Britain.jpg"
+sources:
+  - title: "Mary Beard, SPQR: A History of Ancient Rome (Profile Books, 2015)"
+  - title: "Jérôme Carcopino, Daily Life in Ancient Rome (Yale University Press, 1940)"
+  - title: "Smarthistory — Roman domestic architecture: the insula"
+    url: "https://smarthistory.org/roman-domestic-architecture-insula"
+  - title: "Smarthistory — Baths of Caracalla"
+    url: "https://smarthistory.org/baths-of-caracalla"
+  - title: "The Metropolitan Museum of Art — Roman Housing (Heilbrunn Timeline of Art History)"
+    url: "https://www.metmuseum.org/essays/roman-housing"
+  - title: "Getty — The Seven Plagues of the Ancient Roman City Dweller"
+    url: "https://www.getty.edu/news/the-seven-plagues-of-the-ancient-roman-city-dweller/"
+  - title: "British Museum — Making 2,000-year-old Roman bread"
+    url: "https://www.britishmuseum.org/blog/making-2000-year-old-roman-bread"
+  - title: "Law of Caesar on Municipalities (Tabula Heracleensis), trans. Johnson, Coleman-Norton & Bourne"
+    url: "https://droitromain.univ-grenoble-alpes.fr/Anglica/heracleensis_johnson.html"
+  - title: "Encyclopaedia Britannica — Vigiles; Rome: municipal reforms of Augustus"
+    url: "https://www.britannica.com/topic/vigiles"
+  - title: "World History Encyclopedia — Roman Education"
+    url: "https://www.worldhistory.org/article/2224/roman-education/"
+  - title: "EBSCO Research Starters — First Roman Aqueduct Is Built (Frontinus, De aquis urbis Romae)"
+    url: "https://ebsco.com/research-starters/anthropology/first-roman-aqueduct-built"
+  - title: "VRoma — Roman Meals"
+    url: "https://vroma.org/vromans/plautus/foodweise.html"
+  - title: "Encyclopedia.com — A Roman Day"
+    url: "https://encyclopedia.com/history/news-wires-white-papers-and-books/roman-day"
