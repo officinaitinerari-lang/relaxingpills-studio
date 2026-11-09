@@ -61,9 +61,9 @@ publish:
   made_for_kids: false
   contains_synthetic_media: false
   min_hours_ahead: 2
-  default_tags: ["history for sleep", "science for sleep", "sleep documentary", "calm narration", "relaxing history", "bedtime stories for adults", "fall asleep", "relaxing pills"]
+  default_tags: ["sleep documentary", "calm narration", "bedtime stories for adults", "fall asleep fast", "documentary for sleep and study", "relaxing pills"]
   footer: |
-    🌙 Relaxing Pills — calm history & science for sleep. New episodes every week.
+    🌙 Relaxing Pills — calm history & science for sleep, study and relaxation. New episodes every Tuesday and Friday.
     Narration is AI-assisted; research and scripts are original and sourced below.
     Images: public-domain and openly licensed works (credits below).
 

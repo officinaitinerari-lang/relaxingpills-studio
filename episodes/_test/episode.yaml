@@ -1,13 +1,22 @@
+# Parole chiave secondarie: ancient rome for sleep, daily life in ancient rome, roman history documentary
 status: draft
 pillar: history
-publish_at: "2026-12-01T02:00"
-title: "Test Episode: A Short Walk Through Ancient Rome"
+publish_at: "2026-12-01T00:00Z"
+keyword: "ancient rome"
+title: "Test Episode: A Short Walk Through Ancient Rome | History for Sleep"
 min_minutes: 0.5
 max_minutes: 5
 description: |
+  Fall asleep to a calm walk through ancient Rome — real history, softly told, for sleep, study or relaxation.
   A short technical test of the Relaxing Pills studio.
-tags: ["ancient rome", "roman history"]
-hashtags: ["history", "sleep", "rome"]
+tags: ["ancient rome", "ancient rome for sleep", "daily life in ancient rome", "roman history", "history for sleep", "sleep history", "history to fall asleep", "learn history while you sleep", "sleep documentary", "calm narration"]
+hashtags: ["ancientrome", "history", "historyforsleep"]
+localizations:
+  es: {title: "Prueba: un paseo por la antigua Roma | Historia para dormir", description: "Duérmete con un paseo tranquilo por la antigua Roma: historia real, contada con calma."}
+  pt: {title: "Teste: um passeio pela Roma antiga | História para dormir", description: "Adormeça com um passeio calmo pela Roma antiga: história real, contada com calma."}
+  fr: {title: "Test : une promenade dans la Rome antique | Histoire pour dormir", description: "Endormez-vous avec une promenade paisible dans la Rome antique : de la vraie histoire, racontée en douceur."}
+  de: {title: "Test: Ein Spaziergang durch das antike Rom | Geschichte zum Einschlafen", description: "Schlaf ein mit einem ruhigen Spaziergang durch das antike Rom: echte Geschichte, sanft erzählt."}
+  it: {title: "Prova: una passeggiata nell'antica Roma | Storia per dormire", description: "Addormentati con una passeggiata tranquilla nell'antica Roma: storia vera, raccontata con calma."}
 thumbnail:
   text: "A Quiet Day in Rome"
   image: "search:Roman Forum painting"

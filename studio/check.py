@@ -27,10 +27,31 @@ def check(ep_dir: Path) -> bool:
         datetime.fromisoformat(str(meta.get("publish_at")))
     except Exception:
         errs.append("publish_at non valido (formato 2026-12-01T02:00)")
-    if len(meta.get("title", "")) > 100:
+    title = meta.get("title", "")
+    if len(title) > 100:
         errs.append("titolo oltre 100 caratteri")
-    elif len(meta.get("title", "")) > 70:
-        warns.append("titolo oltre 70 caratteri")
+    elif len(title) > 75:
+        warns.append("titolo oltre 75 caratteri: su telefono viene tagliato")
+    kw = (meta.get("keyword") or "").lower()
+    if not kw:
+        errs.append("manca 'keyword' (parola chiave principale scelta con la ricerca vidIQ)")
+    else:
+        if kw.split(" for ")[0] not in title.lower() and kw not in title.lower():
+            warns.append(f"la parola chiave '{kw}' non compare nel titolo")
+        first = (meta.get("description") or "").strip().split("\n")[0].lower()
+        if kw not in first:
+            errs.append("la parola chiave deve comparire nella prima riga della descrizione")
+    if not re.search(r"\|\s*(History|Science) for Sleep", title):
+        errs.append("il titolo deve finire con '| History for Sleep' o '| Science for Sleep'")
+    pa = str(meta.get("publish_at", ""))
+    if pa and not pa.endswith("Z"):
+        warns.append("publish_at senza 'Z': usare l'orario UTC (es. 2026-12-01T00:00Z)")
+    locs = meta.get("localizations") or {}
+    missing = [l for l in ("es", "pt", "fr", "de", "it") if not (locs.get(l) or {}).get("title")]
+    if missing:
+        errs.append(f"mancano titolo/descrizione tradotti per: {', '.join(missing)}")
+    if len(meta.get("tags") or []) < 8:
+        warns.append("meno di 8 tag")
 
     script = parse_script(ep_dir / "script.md")
     words = script.word_count

@@ -78,7 +78,7 @@ def _resumable(request, label: str):
 
 
 def upload_video(yt, path: Path, title: str, description: str, tags: list[str], cfg: dict,
-                 publish_at_local: str | None) -> dict:
+                 publish_at_local: str | None, localizations: dict | None = None) -> dict:
     from googleapiclient.http import MediaFileUpload
     p = cfg["publish"]
     publish_at = to_publish_at(publish_at_local, p["timezone"], p["min_hours_ahead"])
@@ -101,8 +101,16 @@ def upload_video(yt, path: Path, title: str, description: str, tags: list[str], 
         },
         "status": status,
     }
+    part = "snippet,status"
+    if localizations:
+        # titoli e descrizioni tradotti: il video compare nelle ricerche in altre lingue
+        body["localizations"] = {
+            lang: {"title": v["title"][:100], "description": v.get("description", "")[:5000]}
+            for lang, v in localizations.items() if v.get("title")
+        }
+        part += ",localizations"
     media = MediaFileUpload(str(path), mimetype="video/mp4", chunksize=16 * 1024 * 1024, resumable=True)
-    req = yt.videos().insert(part="snippet,status", body=body, media_body=media, notifySubscribers=True)
+    req = yt.videos().insert(part=part, body=body, media_body=media, notifySubscribers=True)
     res = _resumable(req, path.name)
     return {"video_id": res["id"], "publish_at": publish_at,
             "uploaded_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),

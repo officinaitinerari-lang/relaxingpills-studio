@@ -1,6 +1,8 @@
 shorts:
   - title: "Why Roman carts only moved at night"
-    publish_at: "2026-12-02T15:00"
+    publish_at: "2026-12-02T17:00Z"
+    description: "Why ancient Rome worked at night."
+    localizations: {es: {title: "Por qué los carros romanos solo circulaban de noche"}, pt: {title: "Por que as carroças romanas só andavam à noite"}, fr: {title: "Pourquoi les chariots romains roulaient la nuit"}, de: {title: "Warum römische Karren nur nachts fuhren"}, it: {title: "Perché i carri romani giravano solo di notte"}}
     images: ["search:Roman cart relief", "search:Roman street Pompeii"]
     text: |
       In ancient Rome, most carts were banned from the streets during the day. Julius Caesar's laws pushed heavy deliveries into the night. So the city that slept was also the city that worked. Romans complained about the noise of wheels on stone until dawn. The full calm story of a Roman day is on our channel.

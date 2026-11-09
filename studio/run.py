@@ -71,7 +71,13 @@ def upload_episode(ep_dir: Path, report: dict, cfg: dict) -> dict:
     desc = Path(report["outputs"]["description"]).read_text(encoding="utf-8")
 
     if not state.get("long"):
-        r = Y.upload_video(yt, Path(report["outputs"]["long"]), meta["title"], desc, report["tags"], cfg, meta.get("publish_at"))
+        locs = {}
+        for lang, v in (meta.get("localizations") or {}).items():
+            if v.get("title"):
+                # la descrizione tradotta riceve in coda capitoli, fonti e crediti della versione inglese
+                locs[lang] = {"title": v["title"], "description": (v.get("description", "").strip() + "\n\n" + desc)[:5000]}
+        r = Y.upload_video(yt, Path(report["outputs"]["long"]), meta["title"], desc, report["tags"], cfg,
+                           meta.get("publish_at"), locs)
         r["thumbnail"] = Y.set_thumbnail(yt, r["video_id"], Path(report["outputs"]["thumbnail"]))
         r["captions"] = Y.add_captions(yt, r["video_id"], Path(report["outputs"]["srt"]))
         r["playlist"] = Y.add_to_playlist(yt, pls.get(meta.get("pillar", "history"), ""), r["video_id"])
@@ -88,7 +94,8 @@ def upload_episode(ep_dir: Path, report: dict, cfg: dict) -> dict:
         d = (sh_meta.get("description") or "").strip()
         d = f"{d}\n\nFull calm episode: {long_url}\n\n#shorts #history #science".strip()
         tags = list(dict.fromkeys((sh_meta.get("tags") or []) + report["tags"][:8]))
-        r = Y.upload_video(yt, Path(sh["path"]), sh["title"], d, tags, cfg, sh.get("publish_at"))
+        r = Y.upload_video(yt, Path(sh["path"]), sh["title"], d, tags, cfg, sh.get("publish_at"),
+                           sh_meta.get("localizations"))
         state["shorts"][key] = r
         save_state(ep_dir, state)
         summary(f"- Short {key} caricato: https://youtu.be/{r['video_id']} (uscita {r['publish_at']})")
