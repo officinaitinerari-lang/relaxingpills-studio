@@ -1,0 +1,72 @@
+name: Ricerca immagini
+
+on:
+  push:
+    branches: [main]
+    paths: ["episodes/*/image_queries.yaml"]
+  workflow_dispatch:
+    inputs:
+      episode:
+        description: "Slug dell'episodio"
+        required: true
+
+concurrency:
+  group: candidati
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install pyyaml requests Pillow
+
+      - name: Episodi da cercare
+        id: eps
+        shell: bash
+        run: |
+          if [ -n "${{ github.event.inputs.episode }}" ]; then
+            echo "list=${{ github.event.inputs.episode }}" >> "$GITHUB_OUTPUT"
+          else
+            list=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- 'episodes/*/image_queries.yaml' | cut -d/ -f2 | sort -u | tr '\n' ' ')
+            echo "list=$list" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Recupera i risultati precedenti
+        shell: bash
+        run: |
+          mkdir -p out
+          if git ls-remote --exit-code --heads origin candidati >/dev/null; then
+            git fetch -q origin candidati
+            git --work-tree=out checkout origin/candidati -- . 2>/dev/null || true
+            git reset -q
+          fi
+
+      - name: Cerca i candidati
+        shell: bash
+        run: |
+          for s in ${{ steps.eps.outputs.list }}; do
+            echo "== $s"; python -m studio.candidates "episodes/$s" out
+          done
+
+      - name: Pubblica sul branch "candidati"
+        shell: bash
+        run: |
+          cd out
+          git init -q -b candidati
+          git config user.name "relaxingpills-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A && git commit -qm "Candidati immagini $(date -u +%F_%H%M)"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" candidati

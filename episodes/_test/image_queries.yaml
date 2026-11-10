@@ -1,0 +1,17 @@
+scenes:
+  - id: s001
+    text: "Dawn over the Roman Forum: the temples catch the first light while the city is still quiet"
+    queries: ["Roman Forum painting", "Campo Vaccino"]
+  - id: s002
+    text: "A Roman family eats a simple breakfast of bread, cheese and olives"
+    queries: ["Roman fresco bread", "ancient Roman meal"]
+  - id: s003
+    text: "The great baths: steam, marble halls and people talking quietly"
+    queries: ["Baths of Caracalla painting", "Roman baths Alma-Tadema"]
+  - id: s004
+    text: "A samurai in armour, calm and still, in an Edo-period woodblock print"
+    queries: ["samurai woodblock print", "ukiyo-e samurai armor"]
+  - id: s005
+    text: "Jupiter's Great Red Spot, a storm larger than the Earth"
+    queries: ["Jupiter Great Red Spot", "Juno Jupiter"]
+    science: true
