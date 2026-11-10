@@ -9,6 +9,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
+from .images import EXACT_KINDS
 from .spec import load_config, load_episode, load_shorts, parse_script
 
 WPM = 120  # parole al minuto della voce a velocità 0.88
@@ -62,19 +63,30 @@ def check(ep_dir: Path) -> bool:
         errs.append(f"durata stimata {minutes:.0f} min fuori da {lo}-{hi} ({words} parole)")
     n_img = sum(len(s.images) for s in script.scenes)
     per_img = words / max(n_img, 1)
-    if per_img > 200:
-        errs.append(f"troppe poche immagini: una ogni {per_img:.0f} parole (max 200)")
+    # regola del 10 nov 2026: immagini fitte (una ogni 30-45 s) e scelte una per una
+    if per_img > 100:
+        errs.append(f"troppe poche immagini: una ogni {per_img:.0f} parole (massimo 100, obiettivo 60-90)")
     for s in script.scenes:
         w = sum(len(p.text.split()) for p in s.paragraphs) / len(s.images)
-        if w > 320:
+        if w > 150:
             warns.append(f"scena lunga ({w:.0f} parole per immagine) nel capitolo {script.chapters[s.chapter].title!r}")
+    seen = {}
     for s in script.scenes:
         for ref in s.images:
-            kind = ref.split(":", 1)[0]
-            if kind not in ("commons", "search", "nasa", "local"):
-                errs.append(f"riferimento immagine non valido: {ref}")
+            kind = ref.split(":", 1)[0].strip().lower()
+            if kind not in EXACT_KINDS:
+                errs.append(f"riferimento non esatto o non valido (servono commons:/met:/aic:/cma:/nasaid:/local:): {ref}")
             if kind == "local" and not (ep_dir / ref.split(":", 1)[1].strip()).exists():
                 errs.append(f"file locale mancante: {ref}")
+            seen[ref] = seen.get(ref, 0) + 1
+    dup = [r for r, n in seen.items() if n > 1]
+    if dup:
+        warns.append(f"{len(dup)} immagini usate più volte (es. {dup[0]})")
+    if not (ep_dir / "image_queries.yaml").exists():
+        errs.append("manca image_queries.yaml: le immagini vanno scelte dai candidati della Ricerca immagini")
+    th_img = str((meta.get("thumbnail") or {}).get("image", ""))
+    if th_img and th_img.split(":", 1)[0].lower() not in EXACT_KINDS:
+        errs.append(f"thumbnail.image deve essere un riferimento esatto: {th_img}")
     if len(script.chapters) < 3:
         errs.append("servono almeno 3 capitoli")
     long_sent = [x for s in script.scenes for p in s.paragraphs for x in p.sentences if len(x.split()) > 45]
@@ -92,6 +104,9 @@ def check(ep_dir: Path) -> bool:
             errs.append(f"Short {i}: manca il titolo")
         if not sh.get("images"):
             errs.append(f"Short {i}: nessuna immagine")
+        for ref in sh.get("images") or []:
+            if str(ref).split(":", 1)[0].lower() not in EXACT_KINDS:
+                errs.append(f"Short {i}: riferimento non esatto: {ref}")
 
     print(f"{ep_dir.name}: {words} parole ≈ {minutes:.0f} min · {len(script.chapters)} capitoli · {n_img} immagini "
           f"(una ogni {per_img:.0f} parole) · {len(shorts)} Shorts")

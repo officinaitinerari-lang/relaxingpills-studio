@@ -45,7 +45,8 @@ audio:
   target_lufs: -19
 
 images:
-  min_width: 1200
+  min_width: 1600          # candidati proposti dalla Ricerca immagini
+  min_width_exact: 1280    # sotto questa risoluzione un'immagine scelta viene scartata
   # Licenze accettate. Le CC BY / BY-SA richiedono attribuzione: finiscono nella descrizione.
   allowed_licenses: ["public domain", "pd", "cc0", "cc by", "cc-by", "no restrictions"]
   prefer_public_domain: true
@@ -74,7 +75,7 @@ qa:
   shorts_max_seconds: 59
   lufs_tolerance: 2.5
   max_silence_seconds: 9
-  max_image_seconds: 150
+  max_image_seconds: 75
 
 run:
   max_long_per_run: 2

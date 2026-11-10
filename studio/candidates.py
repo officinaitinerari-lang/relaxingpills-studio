@@ -33,7 +33,7 @@ MIN_SIDE = 1600   # sotto questa risoluzione un candidato non viene proposto (qu
 
 def _font(size: int):
     try:
-        return ImageFont.truetype(FONT, size)
+        return ImageFont.truetype(FONT, size, layout_engine=ImageFont.Layout.BASIC)
     except Exception:
         return ImageFont.load_default()
 
@@ -79,15 +79,24 @@ def gather(src: Sources, scene: dict) -> list[dict]:
     return out
 
 
+def _txt(d, xy, text, fill, size):
+    """Scrive testo senza mai fallire (caratteri non latini sostituiti)."""
+    t = "".join(ch if ord(ch) < 0x2000 else "?" for ch in str(text or ""))
+    try:
+        d.text(xy, t, fill=fill, font=_font(size))
+    except Exception:
+        d.text(xy, t.encode("ascii", "replace").decode(), fill=fill)
+
+
 def grid(src: Sources, scene: dict, cands: list[dict], dest: Path) -> None:
     tw, th, cols = 300, 200, 4
     rows = max(1, (len(cands) + cols - 1) // cols)
     W, H = cols * (tw + 10) + 10, 70 + rows * (th + 58)
     im = Image.new("RGB", (W, H), (245, 244, 240))
     d = ImageDraw.Draw(im)
-    d.text((10, 8), f"{scene['id']}", fill=(20, 20, 20), font=_font(20))
-    d.text((90, 10), scene.get("text", "")[:120], fill=(60, 60, 60), font=_font(15))
-    d.text((90, 32), scene.get("text", "")[120:240], fill=(60, 60, 60), font=_font(15))
+    _txt(d, (10, 8), f"{scene['id']}", (20, 20, 20), 20)
+    _txt(d, (90, 10), scene.get("text", "")[:120], (60, 60, 60), 15)
+    _txt(d, (90, 32), scene.get("text", "")[120:240], (60, 60, 60), 15)
     for i, c in enumerate(cands):
         x, y = 10 + (i % cols) * (tw + 10), 64 + (i // cols) * (th + 58)
         tile = Image.new("RGB", (tw, th), (200, 200, 200))
@@ -106,11 +115,11 @@ def grid(src: Sources, scene: dict, cands: list[dict], dest: Path) -> None:
             print(f"  anteprima {c['ref']}: {e}")
         im.paste(tile, (x, y))
         d.rectangle([x, y, x + 34, y + 26], fill=(0, 0, 0))
-        d.text((x + 7, y + 3), str(i + 1), fill=(255, 255, 255), font=_font(18))
+        _txt(d, (x + 7, y + 3), str(i + 1), (255, 255, 255), 18)
         size = f"{c['width']}x{c['height']}" if c.get("width") else "alta ris."
-        d.text((x, y + th + 4), f"{c['source'][:22]} · {size}", fill=(90, 90, 90), font=_font(12))
-        d.text((x, y + th + 20), c.get("title", "")[:44], fill=(20, 20, 20), font=_font(13))
-        d.text((x, y + th + 36), (c.get("artist") or c.get("date") or "")[:44], fill=(90, 90, 90), font=_font(12))
+        _txt(d, (x, y + th + 4), f"{c['source'][:22]} · {size}", (90, 90, 90), 12)
+        _txt(d, (x, y + th + 20), c.get("title", "")[:44], (20, 20, 20), 13)
+        _txt(d, (x, y + th + 36), (c.get("artist") or c.get("date") or "")[:44], (90, 90, 90), 12)
     im.save(dest, quality=82)
 
 
