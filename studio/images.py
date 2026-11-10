@@ -167,7 +167,10 @@ class Sources:
 
     def met_search(self, q: str, limit: int = 10) -> list[dict]:
         r = self.get(f"{MET_API}/search", params={"q": q, "hasImages": "true"})
-        ids = (r.json().get("objectIDs") or [])[:limit * 2] if r.status_code == 200 else []
+        if r.status_code != 200:
+            print(f"  met: HTTP {r.status_code}")
+            return []
+        ids = (r.json().get("objectIDs") or [])[:limit * 3]
         out = []
         for oid in ids:
             it = self.met_exact(str(oid))
@@ -202,9 +205,9 @@ class Sources:
         return self._aic_item(r.json().get("data", {})) if r.status_code == 200 else None
 
     def aic_search(self, q: str, limit: int = 10) -> list[dict]:
-        r = self.get(f"{AIC_API}/search", params={"q": q, "limit": limit * 2, "fields": self.AIC_FIELDS,
-                                                  "query[term][is_public_domain]": "true"})
+        r = self.get(f"{AIC_API}/search", params={"q": q, "limit": limit * 3, "fields": self.AIC_FIELDS})
         if r.status_code != 200:
+            print(f"  aic: HTTP {r.status_code}")
             return []
         return [x for x in (self._aic_item(d) for d in r.json().get("data", [])) if x][:limit]
 
@@ -235,6 +238,7 @@ class Sources:
     def cma_search(self, q: str, limit: int = 10) -> list[dict]:
         r = self.get(CMA_API, params={"q": q, "has_image": 1, "cc0": 1, "limit": limit})
         if r.status_code != 200:
+            print(f"  cma: HTTP {r.status_code}")
             return []
         return [x for x in (self._cma_item(d) for d in r.json().get("data", [])) if x]
 

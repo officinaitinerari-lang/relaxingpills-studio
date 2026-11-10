@@ -54,7 +54,8 @@ def gather(src: Sources, scene: dict) -> list[dict]:
             pools["commons"] += [c for c in src.commons_search(q, limit=20) if max(c["width"], c["height"]) >= MIN_SIDE][:4]
         except Exception as e:
             print(f"  commons '{q}': {e}")
-        for name, fn, n in (("met", src.met_search, 3), ("aic", src.aic_search, 4), ("cma", src.cma_search, 3)):
+        museums = () if scene.get("science") else (("met", src.met_search, 3), ("aic", src.aic_search, 4), ("cma", src.cma_search, 3))
+        for name, fn, n in museums:
             try:
                 pools[name] += [c for c in fn(q, limit=n) if not c["width"] or max(c["width"], c["height"]) >= MIN_SIDE]
             except Exception as e:
@@ -64,6 +65,7 @@ def gather(src: Sources, scene: dict) -> list[dict]:
                 pools["nasa"] += src.nasa_search(q, limit=4)
             except Exception as e:
                 print(f"  nasa '{q}': {e}")
+    print(f"  {scene['id']}: " + ", ".join(f"{k} {len(v)}" for k, v in pools.items()))
     # un po' da ogni fonte, senza doppioni, massimo 8
     seen, out = set(), []
     order = ["nasa", "commons", "met", "aic", "cma"] if scene.get("science") else ["commons", "met", "aic", "cma", "nasa"]
