@@ -74,7 +74,9 @@ def check(ep_dir: Path) -> bool:
     for s in script.scenes:
         for ref in s.images:
             kind = ref.split(":", 1)[0].strip().lower()
-            if kind not in EXACT_KINDS:
+            if kind == "pick":
+                errs.append(f"immagine non ancora scelta: {ref}")
+            elif kind not in EXACT_KINDS:
                 errs.append(f"riferimento non esatto o non valido (servono commons:/met:/aic:/cma:/nasaid:/local:): {ref}")
             if kind == "local" and not (ep_dir / ref.split(":", 1)[1].strip()).exists():
                 errs.append(f"file locale mancante: {ref}")

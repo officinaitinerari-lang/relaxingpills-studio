@@ -81,15 +81,34 @@ con un soggetto chiaro. Quella definitiva la facciamo nella sessione della domen
 - Originalità: ogni episodio è scritto da zero. Mai riusare paragrafi di altri episodi, mai frasi fatte ripetute
   in ogni video. È la condizione per restare monetizzabili.
 
-## 6. Le immagini
-- Una `@image` ogni 100-160 parole. Episodio da 8.000 parole = circa 60-70 immagini.
-- Preferisci `commons:File:...` con file precisi trovati durante la ricerca (dipinti, incisioni, affreschi,
-  stampe ukiyo-e, mappe antiche, foto NASA/ESA). Verifica che il file esista su Wikimedia Commons e che la licenza
-  sia pubblico dominio o CC0/CC BY/CC BY-SA.
-- `search:` va bene come riserva: aggiungi sempre il tipo di opera ("painting", "engraving", "fresco", "woodblock print")
-  per evitare foto moderne con turisti.
-- Per la scienza usa `nasa:` per pianeti, spazio e Terra vista dallo spazio.
-- Mai immagini di persone reali vive, mai immagini di vittime o distruzione.
+## 6. Le immagini (regola del 10 nov 2026: scelta puntuale, massima aderenza al testo, sempre di qualità)
+Ogni immagine si sceglie **una per una**, guardandola, tra opere libere di alta qualità. Mai ricerche generiche nello script.
+
+**Fonti** (tutte gratuite e libere): Wikimedia Commons (contiene anche le opere in pubblico dominio di Met, Rijksmuseum,
+Getty, Walters, National Gallery, Louvre…), Art Institute of Chicago e Cleveland Museum of Art (CC0), NASA per la scienza.
+Nello script si usano solo riferimenti esatti: `commons:File:…`, `aic:<id>`, `cma:<id>`, `nasaid:<id>`, `local:…`.
+
+**Densità**: una `@image` ogni **60-90 parole** (circa 30-45 secondi). Episodio da 8.000 parole = circa 100 immagini.
+Ogni immagine illustra quello che la voce sta dicendo **in quei secondi**, non il tema generale.
+
+**Procedura obbligatoria**
+1. Scrivi lo script completo; al posto delle immagini metti segnaposti `@image pick:s001`, `@image pick:s002`, … in ordine.
+2. Scrivi `image_queries.yaml` con una voce per segnaposto: `id`, `text` (cosa racconta la voce in quel punto, in una frase),
+   `queries` (1-3 ricerche precise: nome dell'opera o dell'artista se lo conosci, soggetto + tipo di opera,
+   es. "Alma-Tadema Roman bath", "Hiroshige Tokaido woodblock", "Juno Jupiter Great Red Spot"), `science: true` per le scene di scienza.
+3. Fai commit e push di `image_queries.yaml` (con status ancora `draft`): parte da solo il workflow **Ricerca immagini**
+   (circa 1 minuto ogni 4-5 scene). Attendi la fine con `gh run list/view` sul workflow `candidates.yml`.
+4. `git fetch origin candidati` e apri le griglie `candidati:<slug>/grids/<id>.jpg` (guardale davvero, con lo strumento Read)
+   insieme a `candidates.json`. Per ogni scena scegli il candidato con, in ordine di importanza:
+   **aderenza al testo** (soggetto, epoca, luogo giusti) → **qualità** (nitida, senza scritte o cornici invadenti,
+   preferibilmente dipinto, incisione, affresco o foto scientifica) → **coerenza visiva** con le scene vicine.
+5. Se per una scena nessun candidato è adatto: riscrivi le `queries` di quella scena, aggiungi `rerun: true`, push, attendi
+   e ricontrolla. Al massimo 2 tentativi; poi riusa la migliore immagine **già scelta** del capitolo che resti pertinente,
+   senza ripetere la stessa immagine a meno di 5 minuti di distanza.
+6. Sostituisci ogni `pick:` con il riferimento esatto scelto. Togli i `rerun: true`.
+- Mai foto moderne con turisti, cartelli o persone di oggi; mai immagini di persone reali viventi; mai vittime o distruzione.
+- Le immagini sotto i 1.280 pixel di lato vengono scartate dal montaggio: scegli sempre candidati grandi (le griglie riportano le dimensioni).
+- Miniatura (`thumbnail.image`) e immagini degli Shorts: stessi criteri, riferimenti esatti.
 
 ## 7. Gli Shorts
 - 3 per episodio, 110-130 parole ciascuno (circa 45-55 secondi). Il fatto più sorprendente dell'episodio,
@@ -97,7 +116,7 @@ con un soggetto chiaro. Quella definitiva la facciamo nella sessione della domen
   Ultima frase: "The full calm story is on our channel."
 - Titolo Short: max 60 caratteri, curiosità + parola chiave, poi `#shorts` non serve. Descrizione: 1 frase + 3 hashtag.
 - `publish_at`: mercoledì, sabato e domenica successivi all'uscita del video lungo, alle 17:00 UTC.
-- 2-4 immagini ciascuno (verticali o con soggetto centrale).
+- 2-4 immagini ciascuno, scelte dalle griglie (verticali o con soggetto centrale), riferimenti esatti.
 - `localizations` anche per gli Shorts: solo il titolo nelle 5 lingue.
 
 ## 8. Prima di chiudere

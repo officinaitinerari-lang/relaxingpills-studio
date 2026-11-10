@@ -16,15 +16,17 @@ Piano completo: https://claude.ai/artifact/Tt1GxEYzFcDn1EVLx6CBya
 ## Formato dello script
 ```
 # Titolo capitolo
-@image search:Roman Forum painting        ← ricerca su Wikimedia Commons (licenze libere)
-@image commons:File:Nome_preciso.jpg      ← file preciso
-@image nasa:Jupiter Juno                  ← libreria NASA
-@image local:images/gemini-01.jpg         ← file nella cartella dell'episodio
+@image commons:File:Nome_preciso.jpg      ← Wikimedia Commons (pubblico dominio / CC0 / CC BY / CC BY-SA)
+@image aic:27992                          ← Art Institute of Chicago (CC0)
+@image cma:135382                         ← Cleveland Museum of Art (CC0)
+@image nasaid:PIA21973                    ← NASA
+@image local:images/nome.jpg              ← file nella cartella dell'episodio
 Paragrafo di narrazione…
 
 @pause 2                                   ← pausa in secondi
 ```
-Una `@image` ogni 45-75 secondi di narrazione (circa 100-160 parole). Più `@image` di fila = stessa scena divisa.
+Una `@image` ogni 60-90 parole, scelta una per una dalle griglie della **Ricerca immagini**
+(`image_queries.yaml` → workflow `candidates.yml` → branch `candidati`). Vedi docs/PRODUZIONE.md, sezione 6.
 
 ## Comandi locali
 ```
