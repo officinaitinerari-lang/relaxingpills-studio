@@ -51,10 +51,10 @@ def gather(src: Sources, scene: dict) -> list[dict]:
     pools: dict[str, list[dict]] = {"commons": [], "met": [], "aic": [], "cma": [], "nasa": []}
     for q in scene.get("queries", [])[:3]:
         try:
-            pools["commons"] += [c for c in src.commons_search(q, limit=20) if max(c["width"], c["height"]) >= MIN_SIDE][:4]
+            pools["commons"] += [c for c in src.commons_search(q, limit=25) if max(c["width"], c["height"]) >= MIN_SIDE][:5]
         except Exception as e:
             print(f"  commons '{q}': {e}")
-        museums = () if scene.get("science") else (("met", src.met_search, 3), ("aic", src.aic_search, 4), ("cma", src.cma_search, 3))
+        museums = () if scene.get("science") else (("aic", src.aic_search, 4), ("cma", src.cma_search, 4))
         for name, fn, n in museums:
             try:
                 pools[name] += [c for c in fn(q, limit=n) if not c["width"] or max(c["width"], c["height"]) >= MIN_SIDE]

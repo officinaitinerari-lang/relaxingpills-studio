@@ -4,7 +4,6 @@ Regola del canale (10 nov 2026): ogni immagine è scelta UNA PER UNA, puntando a
 e deve essere di qualità. Nello script si usano solo riferimenti esatti:
 
   commons:File:Nome.jpg    file preciso su Wikimedia Commons (pubblico dominio, CC0, CC BY, CC BY-SA)
-  met:436535               opera del Metropolitan Museum of Art (Open Access, CC0)
   aic:27992                opera dell'Art Institute of Chicago (pubblico dominio, CC0)
   cma:135382               opera del Cleveland Museum of Art (Open Access, CC0)
   nasaid:PIA21973          immagine NASA (pubblico dominio)
@@ -34,10 +33,11 @@ MET_API = "https://collectionapi.metmuseum.org/public/collection/v1"
 AIC_API = "https://api.artic.edu/api/v1/artworks"
 CMA_API = "https://openaccess-api.clevelandart.org/api/artworks"
 
-EXACT_KINDS = ("commons", "met", "aic", "cma", "nasaid", "local")
+# met: escluso dal 10 nov 2026 (l'API del Met risponde 410); le sue opere CC0 sono comunque su Wikimedia Commons
+EXACT_KINDS = ("commons", "aic", "cma", "nasaid", "local")
 
 # distanza minima tra due richieste allo stesso sito (secondi): Wikimedia chiede educazione
-HOST_GAP = {"commons.wikimedia.org": 1.0, "upload.wikimedia.org": 0.6}
+HOST_GAP = {"commons.wikimedia.org": 1.0, "upload.wikimedia.org": 0.6, "api.artic.edu": 1.1, "www.artic.edu": 1.1}
 DEFAULT_GAP = 0.25
 
 
@@ -68,6 +68,8 @@ class Sources:
         self.cfg = cfg
         self.s = requests.Session()
         self.s.headers["User-Agent"] = cfg["channel"]["user_agent"]
+        # richiesto (come cortesia) dall'Art Institute of Chicago
+        self.s.headers["AIC-User-Agent"] = "RelaxingPillsStudio (https://github.com/officinaitinerari-lang/relaxingpills-studio)"
         icfg = cfg["images"]
         self.allowed = [a.lower() for a in icfg["allowed_licenses"]]
         self._last: dict[str, float] = {}
