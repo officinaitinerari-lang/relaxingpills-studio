@@ -1,0 +1,152 @@
+{
+  "slug": "2026-12-08-planet-jupiter-gentle-giant",
+  "checks": [
+    {
+      "name": "durata video lungo",
+      "ok": true,
+      "detail": "57.7 min (atteso 45-180)",
+      "fatal": true
+    },
+    {
+      "name": "video e audio allineati",
+      "ok": true,
+      "detail": "video 3463.3s, voce 3463.2s",
+      "fatal": true
+    },
+    {
+      "name": "volume",
+      "ok": true,
+      "detail": "-19.3 LUFS",
+      "fatal": true
+    },
+    {
+      "name": "pause troppo lunghe nella voce",
+      "ok": true,
+      "detail": "max 6.0s",
+      "fatal": true
+    },
+    {
+      "name": "immagini sostitutive",
+      "ok": true,
+      "detail": "1%",
+      "fatal": true
+    },
+    {
+      "name": "immagine tenuta troppo a lungo",
+      "ok": true,
+      "detail": "max 47s",
+      "fatal": false
+    },
+    {
+      "name": "titolo",
+      "ok": true,
+      "detail": "67 caratteri",
+      "fatal": true
+    },
+    {
+      "name": "descrizione",
+      "ok": true,
+      "detail": "4859 caratteri",
+      "fatal": true
+    },
+    {
+      "name": "capitoli",
+      "ok": true,
+      "detail": "12",
+      "fatal": false
+    },
+    {
+      "name": "durata Short 1",
+      "ok": true,
+      "detail": "51.5s",
+      "fatal": true
+    },
+    {
+      "name": "titolo Short 1",
+      "ok": true,
+      "detail": "49 caratteri",
+      "fatal": true
+    },
+    {
+      "name": "durata Short 2",
+      "ok": true,
+      "detail": "48.4s",
+      "fatal": true
+    },
+    {
+      "name": "titolo Short 2",
+      "ok": true,
+      "detail": "51 caratteri",
+      "fatal": true
+    },
+    {
+      "name": "durata Short 3",
+      "ok": true,
+      "detail": "46.4s",
+      "fatal": true
+    },
+    {
+      "name": "titolo Short 3",
+      "ok": true,
+      "detail": "44 caratteri",
+      "fatal": true
+    }
+  ],
+  "ok": true,
+  "outputs": {
+    "long": "/home/runner/work/relaxingpills-studio/relaxingpills-studio/build/2026-12-08-planet-jupiter-gentle-giant/2026-12-08-planet-jupiter-gentle-giant.mp4",
+    "srt": "/home/runner/work/relaxingpills-studio/relaxingpills-studio/build/2026-12-08-planet-jupiter-gentle-giant/2026-12-08-planet-jupiter-gentle-giant.en.srt",
+    "description": "/home/runner/work/relaxingpills-studio/relaxingpills-studio/build/2026-12-08-planet-jupiter-gentle-giant/description.txt",
+    "thumbnail": "/home/runner/work/relaxingpills-studio/relaxingpills-studio/build/2026-12-08-planet-jupiter-gentle-giant/thumbnail.png"
+  },
+  "thumbnail_source": "auto",
+  "tags": [
+    "planet jupiter",
+    "jupiter planet",
+    "jupiter for sleep",
+    "great red spot",
+    "jupiter moons",
+    "europa",
+    "ganymede",
+    "gas giant",
+    "solar system",
+    "facts to fall asleep to",
+    "fall asleep to science",
+    "science for sleep",
+    "space documentary for sleep",
+    "sleep documentary",
+    "calm narration",
+    "bedtime stories for adults",
+    "fall asleep fast",
+    "documentary for sleep and study",
+    "relaxing pills"
+  ],
+  "duration_min": 57.7,
+  "words": 7663,
+  "shorts": [
+    {
+      "index": 1,
+      "path": "/home/runner/work/relaxingpills-studio/relaxingpills-studio/build/2026-12-08-planet-jupiter-gentle-giant/2026-12-08-planet-jupiter-gentle-giant-short1.mp4",
+      "duration": 51.5,
+      "title": "How a Moon of Jupiter Revealed the Speed of Light",
+      "publish_at": "2026-12-09T17:00Z",
+      "fallback_images": 0
+    },
+    {
+      "index": 2,
+      "path": "/home/runner/work/relaxingpills-studio/relaxingpills-studio/build/2026-12-08-planet-jupiter-gentle-giant/2026-12-08-planet-jupiter-gentle-giant-short2.mp4",
+      "duration": 48.4,
+      "title": "Jupiter's Great Red Spot Is Not the One Cassini Saw",
+      "publish_at": "2026-12-12T17:00Z",
+      "fallback_images": 0
+    },
+    {
+      "index": 3,
+      "path": "/home/runner/work/relaxingpills-studio/relaxingpills-studio/build/2026-12-08-planet-jupiter-gentle-giant/2026-12-08-planet-jupiter-gentle-giant-short3.mp4",
+      "duration": 46.4,
+      "title": "This Icy Moon May Hold More Water Than Earth",
+      "publish_at": "2026-12-13T17:00Z",
+      "fallback_images": 0
+    }
+  ]
+}
