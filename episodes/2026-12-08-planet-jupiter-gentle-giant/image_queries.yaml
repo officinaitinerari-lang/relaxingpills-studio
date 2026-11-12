@@ -19,7 +19,6 @@ scenes:
   - Van Gogh Starry Night Over the Rhone
   - Caspar David Friedrich night landscape moon
   - nocturne landscape stars painting
-  rerun: true
 - id: s004
   text: An ancient Greek astronomer studying the sky
   queries:
@@ -80,7 +79,6 @@ scenes:
   - Galileo manuscript Jupiter satellites
   - Galileo Medicean stars drawing 1610
   - Sidereus Nuncius Jupiter satellites observations page
-  rerun: true
 - id: s014
   text: Title page of Sidereus Nuncius, 1610
   queries:
@@ -123,7 +121,6 @@ scenes:
   - Romer 1676 Journal des sçavans
   - Demonstration touchant le mouvement de la lumiere
   - Romer speed of light illustration
-  rerun: true
 - id: s021
   text: Jupiter and Earth shown side by side to compare their sizes
   queries:
@@ -159,7 +156,6 @@ scenes:
   - outer solar system orbits illustration
   - solar system orbits Jupiter Saturn diagram
   science: true
-  rerun: true
 - id: s026
   text: Sunlight falling on Jupiter's clouds, seen from a spacecraft
   queries:
@@ -277,7 +273,6 @@ scenes:
   - Jupiter drawing 19th century astronomer
   - Jupiter telescopic drawing 1870
   - Jupiter sketch Great Red Spot 1879
-  rerun: true
 - id: s043
   text: Étienne Léopold Trouvelot's beautiful 19th century drawing of Jupiter
   queries:
@@ -319,7 +314,6 @@ scenes:
   - Jupiter interior structure illustration
   - Jupiter cross section diagram
   science: true
-  rerun: true
 - id: s049
   text: Deep blue and dark tones of Jupiter's atmosphere seen near the poles
   queries:
@@ -516,7 +510,6 @@ scenes:
   - Callisto moon full disk
   - Callisto PIA03456
   science: true
-  rerun: true
 - id: s077
   text: Valhalla, the giant ring-shaped basin on Callisto
   queries:
@@ -615,7 +608,6 @@ scenes:
   - Europa Clipper over Europa illustration
   - Europa Clipper spacecraft Jupiter
   science: true
-  rerun: true
 - id: s091
   text: ESA's Juice spacecraft near Jupiter and its icy moons, illustration
   queries:
@@ -623,7 +615,6 @@ scenes:
   - Juice spacecraft Jupiter Ganymede illustration
   - Jupiter Icy Moons Explorer artist
   science: true
-  rerun: true
 - id: s092
   text: A quiet landscape at night under a sky full of stars, with a bright planet
   queries:

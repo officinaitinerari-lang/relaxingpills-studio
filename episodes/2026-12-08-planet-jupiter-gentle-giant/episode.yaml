@@ -1,7 +1,7 @@
 # Parole chiave (vidIQ, 12 nov 2026): principale "planet jupiter" (vol 55, concorrenza 43, ~5.000 ricerche/mese).
 # Secondarie: jupiter planet (vol 62, comp 40, ~13.000/mese), great red spot (comp 53), ganymede (comp 55),
 # europa (comp 50), gas giant. "jupiter for sleep" e "facts about jupiter" hanno volume quasi nullo; "jupiter" ha concorrenza 70.
-status: draft
+status: ready
 pillar: science
 publish_at: "2026-12-08T00:00Z"
 keyword: "planet jupiter"
@@ -32,7 +32,7 @@ localizations:
     description: "Addormentati con il pianeta Giove, il gigante gentile del Sistema solare: scienza vera, raccontata con calma, per dormire, studiare o rilassarti. Bande di nubi, la Grande Macchia Rossa e le lune Io, Europa, Ganimede e Callisto."
 thumbnail:
   text: "The Gentle Giant"
-  image: "pick:s001"
+  image: "commons:File:Hubble Takes Close-up Portrait of Jupiter.png"
 sources:
   - title: "NASA Science — Jupiter: Facts"
     url: "https://science.nasa.gov/jupiter/jupiter-facts/"
