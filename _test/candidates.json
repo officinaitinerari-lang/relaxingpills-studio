@@ -1,0 +1,579 @@
+{
+ "s001": {
+  "text": "Dawn over the Roman Forum: the temples catch the first light while the city is still quiet",
+  "queries": [
+   "Roman Forum painting",
+   "Campo Vaccino"
+  ],
+  "candidates": [
+   {
+    "ref": "commons:File:Claude Lorrain - Capriccio with ruins of the Roman Forum - Google Art Project.jpg",
+    "source": "Wikimedia Commons",
+    "title": "Claude Lorrain - Capriccio with ruins of the Roman Forum - Google Art Project",
+    "artist": "Claude Lorrain",
+    "date": "circa 1634date QS:P571,+1634-00-00T00:00",
+    "description": "",
+    "width": 4978,
+    "height": 3284,
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Claude_Lorrain_-_Capriccio_with_ruins_of_the_Roman_Forum_-_Google_Art_Project.jpg",
+    "preview_size": null
+   },
+   {
+    "ref": "aic:43079",
+    "source": "Art Institute of Chicago",
+    "title": "The Roman Forum",
+    "artist": "Claude Lorrain",
+    "date": "1636",
+    "description": "A work made of etching on ivory laid paper.",
+    "width": 3000,
+    "height": 2138,
+    "license": "Public domain (Art Institute of Chicago, CC0)",
+    "page": "https://www.artic.edu/artworks/43079",
+    "preview_size": null
+   },
+   {
+    "ref": "cma:128876",
+    "source": "Cleveland Museum of Art (Open Access)",
+    "title": "Roman Ruins, Villa Pamfili",
+    "artist": "Hubert Robert (French, 1733–1808)",
+    "date": "1774",
+    "description": "While living in Italy, Robert developed a fondness for classical architecture, making countless drawings that served as the basis for paintings and prints for decades after he returned to Paris. Denis Diderot (1713–1784), a French philosoph",
+    "width": 3400,
+    "height": 2456,
+    "license": "Public domain (Cleveland Museum of Art, CC0)",
+    "page": "https://clevelandart.org/art/1951.485",
+    "preview_size": null
+   },
+   {
+    "ref": "commons:File:Andrea locatelli the roman forum).jpg",
+    "source": "Wikimedia Commons",
+    "title": "Andrea locatelli the roman forum)",
+    "artist": "Andrea Locatelli",
+    "date": "",
+    "description": "",
+    "width": 3100,
+    "height": 2460,
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Andrea_locatelli_the_roman_forum).jpg",
+    "preview_size": null
+   },
+   {
+    "ref": "aic:5519",
+    "source": "Art Institute of Chicago",
+    "title": "Portrait of a Man Wearing an Ivy Wreath",
+    "artist": "Ancient Egyptian",
+    "date": "Roman Period, early to mid–2nd century",
+    "description": "A portrait of a young man with dark hair and beard painted on an irregular piece of wood. The background is gold as a wreath of ivy and necklace he wears. There are many areas where the paint has come off the surface.",
+    "width": 5412,
+    "height": 7216,
+    "license": "Public domain (Art Institute of Chicago, CC0)",
+    "page": "https://www.artic.edu/artworks/5519",
+    "preview_size": null
+   },
+   {
+    "ref": "cma:123013",
+    "source": "Cleveland Museum of Art (Open Access)",
+    "title": "Eighteen Views of Rome: The Campo Vaccino (The Roman Forum)",
+    "artist": "Lievin Cruyl (Flemish, c. 1640-c. 1720)",
+    "date": "1665",
+    "description": "",
+    "width": 3400,
+    "height": 2601,
+    "license": "Public domain (Cleveland Museum of Art, CC0)",
+    "page": "https://clevelandart.org/art/1943.270",
+    "preview_size": null
+   },
+   {
+    "ref": "commons:File:Roman Forum (1883), by Cesare Tallone.jpg",
+    "source": "Wikimedia Commons",
+    "title": "Roman Forum (1883), by Cesare Tallone",
+    "artist": "Cesare Tallone",
+    "date": "1883date QS:P571,+1883-00-00T00:00:00Z/9",
+    "description": "Roman Forum (1883), by Cesare Tallone",
+    "width": 3873,
+    "height": 6063,
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Roman_Forum_(1883),_by_Cesare_Tallone.jpg",
+    "preview_size": null
+   },
+   {
+    "ref": "aic:86102",
+    "source": "Art Institute of Chicago",
+    "title": "Ruins of Roman Forum, with Figures",
+    "artist": "Giovanni Battista Pittoni, the elder",
+    "date": "c. 1550",
+    "description": "A work made of pen and brown ink on buff laid paper, squared in graphite, laid down on ivory laid paper.",
+    "width": 3000,
+    "height": 1983,
+    "license": "Public domain (Art Institute of Chicago, CC0)",
+    "page": "https://www.artic.edu/artworks/86102",
+    "preview_size": null
+   }
+  ]
+ },
+ "s002": {
+  "text": "A Roman family eats a simple breakfast of bread, cheese and olives",
+  "queries": [
+   "Roman fresco bread",
+   "ancient Roman meal"
+  ],
+  "candidates": [
+   {
+    "ref": "commons:File:Fresco depicting the distribution of bread (51357279961).jpg",
+    "source": "Wikimedia Commons",
+    "title": "Fresco depicting the distribution of bread (51357279961)",
+    "artist": "Tyler Bell",
+    "date": "2021-07-29 15:34",
+    "description": "Fresco depicting the distribution of bread Roman, Pompeii, House of the Baker, AD 40-79 Fresco Museo Archeologico Nazionale di Napoli MANN 9071",
+    "width": 2428,
+    "height": 2765,
+    "license": "CC BY 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Fresco_depicting_the_distribution_of_bread_(51357279961).jpg",
+    "preview_size": null
+   },
+   {
+    "ref": "aic:14968",
+    "source": "Art Institute of Chicago",
+    "title": "Mural Fragment Depicting a Maguey Bloodletting Ritual",
+    "artist": "Teotihuacan",
+    "date": "500–600 CE",
+    "description": "Fragment of a mural from the city of Teotihuacan mural painted in red and white tones that depicts a ritual figure with speach scroll and scatting sacred bjects.",
+    "width": 7899,
+    "height": 5571,
+    "license": "Public domain (Art Institute of Chicago, CC0)",
+    "page": "https://www.artic.edu/artworks/14968",
+    "preview_size": null
+   },
+   {
+    "ref": "commons:File:Ancient Roman Bread (Detail).jpg",
+    "source": "Wikimedia Commons",
+    "title": "Ancient Roman Bread (Detail)",
+    "artist": "Unknown authorUnknown author",
+    "date": "Unknown date",
+    "description": "A detail of a fresco from Herculaneum showing a loaf of bread. National Archaeological Museum of Naples. Photographed by Fred Cherrygarden.",
+    "width": 6000,
+    "height": 4000,
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Ancient_Roman_Bread_(Detail).jpg",
+    "preview_size": null
+   },
+   {
+    "ref": "aic:61600",
+    "source": "Art Institute of Chicago",
+    "title": "Statue of the Aphrodite of Knidos",
+    "artist": "Ancient Roman",
+    "date": "2nd century",
+    "description": "White and beige stone statue of a female nude standing in contrapposto position, with weight on the right leg. The head of the statue is missing. The left arm has been broken off just past the shoulder, and the left hand is also absent.",
+    "width": 5412,
+    "height": 7216,
+    "license": "Public domain (Art Institute of Chicago, CC0)",
+    "page": "https://www.artic.edu/artworks/61600",
+    "preview_size": null
+   },
+   {
+    "ref": "commons:File:Fresco showing a piece of bread and two figs, from Pompeii, Naples National Archaeological Museum (14843173354).jpg",
+    "source": "Wikimedia Commons",
+    "title": "Fresco showing a piece of bread and two figs, from Pompeii, Naples National Archaeological Museum (14843173354)",
+    "artist": "Carole Raddato from FRANKFURT, Germany",
+    "date": "2014-07-04 13:39",
+    "description": "Fresco showing a piece of bread and two figs, from Pompeii, Naples National Archaeological Museum",
+    "width": 2779,
+    "height": 2688,
+    "license": "CC BY-SA 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Fresco_showing_a_piece_of_bread_and_two_figs,_from_Pompeii,_Naples_National_Archaeological_Museum_(14843173354).jpg",
+    "preview_size": null
+   },
+   {
+    "ref": "aic:9978",
+    "source": "Art Institute of Chicago",
+    "title": "Denarius (Coin) Depicting the God Apollo",
+    "artist": "Ancient Roman",
+    "date": "90 BCE",
+    "description": "Silver coin with a face in profile on one side, a figure riding a chariot pulled by four horses on the reverse.",
+    "width": 3000,
+    "height": 1374,
+    "license": "Public domain (Art Institute of Chicago, CC0)",
+    "page": "https://www.artic.edu/artworks/9978",
+    "preview_size": null
+   },
+   {
+    "ref": "commons:File:Wall painting - still life with bread and figs - Herculaneum - Napoli MAN 8625.jpg",
+    "source": "Wikimedia Commons",
+    "title": "Wall painting - still life with bread and figs - Herculaneum - Napoli MAN 8625",
+    "artist": "ArchaiOptix",
+    "date": "2018-10-07 14:39:00",
+    "description": "- object type: wall painting (fresco) - description: still life with bread and 2 figs lying on a window sill - period / date: fourth style of pompeian wall painting - findspot: Herculaneum - museum / inventory number: Napoli, Museo Archeolo",
+    "width": 2194,
+    "height": 2175,
+    "license": "CC BY-SA 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Wall_painting_-_still_life_with_bread_and_figs_-_Herculaneum_-_Napoli_MAN_8625.jpg",
+    "preview_size": null
+   },
+   {
+    "ref": "aic:194773",
+    "source": "Art Institute of Chicago",
+    "title": "Sketch for a Ceiling Fresco",
+    "artist": "Giovanni Domenico Ferretti",
+    "date": "c. 1740",
+    "description": "A work made of oil on canvas.",
+    "width": 1750,
+    "height": 2250,
+    "license": "Public domain (Art Institute of Chicago, CC0)",
+    "page": "https://www.artic.edu/artworks/194773",
+    "preview_size": null
+   }
+  ]
+ },
+ "s003": {
+  "text": "The great baths: steam, marble halls and people talking quietly",
+  "queries": [
+   "Baths of Caracalla painting",
+   "Roman baths Alma-Tadema"
+  ],
+  "candidates": [
+   {
+    "ref": "commons:File:Baths of Caracalla, Rome SAAM-1962.13.21 1.jpg",
+    "source": "Wikimedia Commons",
+    "title": "Baths of Caracalla, Rome SAAM-1962.13.21 1",
+    "artist": "Cass Gilbert",
+    "date": "1880date QS:P571,+1880-00-00T00:00:00Z/9",
+    "description": "",
+    "width": 1404,
+    "height": 2000,
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Baths_of_Caracalla,_Rome_SAAM-1962.13.21_1.jpg",
+    "preview_size": null
+   },
+   {
+    "ref": "aic:64537",
+    "source": "Art Institute of Chicago",
+    "title": "Ruins of the Antonine Baths [Baths of Caracalla], from Views of Rome",
+    "artist": "Giovanni Battista Piranesi",
+    "date": "1765, published 1800–07",
+    "description": "A work made of etching on heavy ivory laid paper.",
+    "width": 3000,
+    "height": 2101,
+    "license": "Public domain (Art Institute of Chicago, CC0)",
+    "page": "https://www.artic.edu/artworks/64537",
+    "preview_size": null
+   },
+   {
+    "ref": "commons:File:Andrew Wilson - The Baths of Caracalla - B1977.14.358 - Yale Center for British Art.jpg",
+    "source": "Wikimedia Commons",
+    "title": "Andrew Wilson - The Baths of Caracalla - B1977.14.358 - Yale Center for British Art",
+    "artist": "Andrew Wilson",
+    "date": "1810",
+    "description": "",
+    "width": 1920,
+    "height": 1215,
+    "license": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Andrew_Wilson_-_The_Baths_of_Caracalla_-_B1977.14.358_-_Yale_Center_for_British_Art.jpg",
+    "preview_size": null
+   },
+   {
+    "ref": "aic:39560",
+    "source": "Art Institute of Chicago",
+    "title": "The Bathers",
+    "artist": "William Adolphe Bouguereau",
+    "date": "1884",
+    "description": "A work made of oil on canvas.",
+    "width": 10057,
+    "height": 15780,
+    "license": "Public domain (Art Institute of Chicago, CC0)",
+    "page": "https://www.artic.edu/artworks/39560",
+    "preview_size": null
+   },
+   {
+    "ref": "commons:File:Carlo Labruzzo - The Baths of Caracalla, Rome - B2012.24.3 - Yale Center for British Art.jpg",
+    "source": "Wikimedia Commons",
+    "title": "Carlo Labruzzo - The Baths of Caracalla, Rome - B2012.24.3 - Yale Center for British Art",
+    "artist": "Carlo Labruzzo",
+    "date": "",
+    "description": "",
+    "width": 1920,
+    "height": 1200,
+    "license": "CC0",
+    "page": "https://commons.wikimedia.org/wiki/File:Carlo_Labruzzo_-_The_Baths_of_Caracalla,_Rome_-_B2012.24.3_-_Yale_Center_for_British_Art.jpg",
+    "preview_size": null
+   },
+   {
+    "ref": "aic:153799",
+    "source": "Art Institute of Chicago",
+    "title": "Woman Bathing Her Feet in a Brook",
+    "artist": "Camille Pissarro",
+    "date": "1895",
+    "description": "Small dots of soft color form a woman in a red shirt and brown skirt seen up close, washing her bare feet in a lush brook while seated on a sloping bank.",
+    "width": 2877,
+    "height": 2250,
+    "license": "Public domain (Art Institute of Chicago, CC0)",
+    "page": "https://www.artic.edu/artworks/153799",
+    "preview_size": null
+   },
+   {
+    "ref": "commons:File:Hamburg, Kunsthalle, Anselm Feuerbach, Terrainstudie aus den Caracalla-Thermen.jpg",
+    "source": "Wikimedia Commons",
+    "title": "Hamburg, Kunsthalle, Anselm Feuerbach, Terrainstudie aus den Caracalla-Thermen",
+    "artist": "Dguendel",
+    "date": "2024-02-17 11:58:28",
+    "description": "Hamburg, Kunsthalle, Anselm Feuerbach, landscape study at the baths of Caracalla, 1858",
+    "width": 3549,
+    "height": 2646,
+    "license": "CC BY 4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hamburg,_Kunsthalle,_Anselm_Feuerbach,_Terrainstudie_aus_den_Caracalla-Thermen.jpg",
+    "preview_size": null
+   },
+   {
+    "ref": "aic:10287",
+    "source": "Art Institute of Chicago",
+    "title": "Bathing Nymph",
+    "artist": "François Boucher",
+    "date": "c. 1745–50",
+    "description": "A work made of oil on canvas.",
+    "width": 2421,
+    "height": 2156,
+    "license": "Public domain (Art Institute of Chicago, CC0)",
+    "page": "https://www.artic.edu/artworks/10287",
+    "preview_size": null
+   }
+  ]
+ },
+ "s004": {
+  "text": "A samurai in armour, calm and still, in an Edo-period woodblock print",
+  "queries": [
+   "samurai woodblock print",
+   "ukiyo-e samurai armor"
+  ],
+  "candidates": [
+   {
+    "ref": "commons:File:Sake gift certificate samurai woodblock print.jpg",
+    "source": "Wikimedia Commons",
+    "title": "Sake gift certificate samurai woodblock print",
+    "artist": "self-scanned; original author unknown",
+    "date": "early 20th centurydate QS:P,+1950-00-00T",
+    "description": "Taisho-era gift certificate, from a specific shop in Japan, for refined sake. Depicts a samurai on horseback, against a rayed, rising sun; framed by an array of samurai weapons/gear (including a naginata across the top, and a yari across th",
+    "width": 6080,
+    "height": 4347,
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Sake_gift_certificate_samurai_woodblock_print.jpg",
+    "preview_size": null
+   },
+   {
+    "ref": "aic:9415",
+    "source": "Art Institute of Chicago",
+    "title": "Panel (Furnishing Fabric)",
+    "artist": "Lancaster Prints",
+    "date": "1856",
+    "description": "A work made of cotton, plain weave; engraved roller printed; glazed.",
+    "width": 3000,
+    "height": 1251,
+    "license": "Public domain (Art Institute of Chicago, CC0)",
+    "page": "https://www.artic.edu/artworks/9415",
+    "preview_size": null
+   },
+   {
+    "ref": "cma:148387",
+    "source": "Cleveland Museum of Art (Open Access)",
+    "title": "Cherry Blossoms in the Wind",
+    "artist": "Utagawa Toyokuni (Japanese, 1769–1825)",
+    "date": "late 1790s",
+    "description": "Highly regarded for his images of actors, Toyokuni was also known for his prints of beauties that demonstrate his brilliant skill in composition. This triptych depicts a joyful hanami (flower viewing) scene in spring. One woman stands on a ",
+    "width": 2262,
+    "height": 3400,
+    "license": "Public domain (Cleveland Museum of Art, CC0)",
+    "page": "https://clevelandart.org/art/1975.97.a",
+    "preview_size": null
+   },
+   {
+    "ref": "commons:File:Sake gift certificate samurai woodblock print (cropped).jpg",
+    "source": "Wikimedia Commons",
+    "title": "Sake gift certificate samurai woodblock print (cropped)",
+    "artist": "self-scanned; original author unknown",
+    "date": "early 20th centurydate QS:P,+1950-00-00T",
+    "description": "Taisho-era gift certificate, from a specific shop in Japan, for refined sake. Depicts a samurai on horseback, against a rayed, rising sun; framed by an array of samurai weapons/gear (including a naginata across the top, and a yari across th",
+    "width": 4273,
+    "height": 4063,
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Sake_gift_certificate_samurai_woodblock_print_(cropped).jpg",
+    "preview_size": null
+   },
+   {
+    "ref": "aic:185222",
+    "source": "Art Institute of Chicago",
+    "title": "Group Pilgrimage to the Jizo Nun",
+    "artist": "Ike Taiga",
+    "date": "1755/65",
+    "description": "Long scroll drawing, upper half is script; lower half depicts people in courtyard.",
+    "width": 3000,
+    "height": 1944,
+    "license": "Public domain (Art Institute of Chicago, CC0)",
+    "page": "https://www.artic.edu/artworks/185222",
+    "preview_size": null
+   },
+   {
+    "ref": "cma:152544",
+    "source": "Cleveland Museum of Art (Open Access)",
+    "title": "Act VII from the series The Storehouse of Loyal Retainers",
+    "artist": "Kitagawa Utamaro (Japanese, c. 1754–1806)",
+    "date": "c. 1801–2",
+    "description": "This series gives a famous play a humorous spin by altering the setting and some parts of the narrative. Utamaro kept his jokes accessible by picturing the action of the original episode to the side of the main image for easy reference. In ",
+    "width": 2333,
+    "height": 3400,
+    "license": "Public domain (Cleveland Museum of Art, CC0)",
+    "page": "https://clevelandart.org/art/1985.360",
+    "preview_size": null
+   },
+   {
+    "ref": "commons:File:Sake gift certificate samurai woodblock print reverse side.jpg",
+    "source": "Wikimedia Commons",
+    "title": "Sake gift certificate samurai woodblock print reverse side",
+    "artist": "self-scanned; original author unknown",
+    "date": "early 20th centurydate QS:P,+1950-00-00T",
+    "description": "Taishō-era gift certificate for refined sake, from a specific shop in Japan. Depicts a samurai on horseback against a rayed, rising sun; framed by an array of traditional samurai weapons/gear. Japanese woodblock printing as commercial art, ",
+    "width": 6080,
+    "height": 4347,
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Sake_gift_certificate_samurai_woodblock_print_reverse_side.jpg",
+    "preview_size": null
+   },
+   {
+    "ref": "aic:6655",
+    "source": "Art Institute of Chicago",
+    "title": "Panel (Furnishing Fabric)",
+    "artist": "Bannister Hall Print Works",
+    "date": "c. 1815",
+    "description": "A work made of cotton, plain weave; block printed.",
+    "width": 2073,
+    "height": 2226,
+    "license": "Public domain (Art Institute of Chicago, CC0)",
+    "page": "https://www.artic.edu/artworks/6655",
+    "preview_size": null
+   }
+  ]
+ },
+ "s005": {
+  "text": "Jupiter's Great Red Spot, a storm larger than the Earth",
+  "queries": [
+   "Jupiter Great Red Spot",
+   "Juno Jupiter"
+  ],
+  "candidates": [
+   {
+    "ref": "nasaid:PIA21376",
+    "source": "NASA",
+    "title": "Crescent Jupiter with the Great Red Spot",
+    "artist": "JPL",
+    "date": "2017-01-13",
+    "description": "This image of a crescent Jupiter and the iconic Great Red Spot was created by a citizen scientist (Roman Tkachenko) using data from Juno's JunoCam instrument. You can also see a series of storms shaped like white ovals, known informally as ",
+    "width": 0,
+    "height": 0,
+    "license": "Public domain (NASA)",
+    "page": "https://images.nasa.gov/details/PIA21376",
+    "preview_size": [
+     437,
+     640
+    ]
+   },
+   {
+    "ref": "commons:File:Jupiter from Voyager 1.jpg",
+    "source": "Wikimedia Commons",
+    "title": "Jupiter from Voyager 1",
+    "artist": "NASA, Caltech/JPL",
+    "date": "March 1979",
+    "description": "Detail of Jupiter's atmosphere, as imaged by Voyager 1. Suggested for English Wikipedia:alternative text for images: This view of Jupiter's clouds with the Great Red Spot at top right as brown oval to right of wavy white and brown clouds. B",
+    "width": 5489,
+    "height": 4637,
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Jupiter_from_Voyager_1.jpg",
+    "preview_size": null
+   },
+   {
+    "ref": "nasaid:PIA21985",
+    "source": "NASA",
+    "title": "Jupiter's Great Red Spot, Spotted",
+    "artist": "JPL",
+    "date": "2018-04-01",
+    "description": "This image of Jupiter's iconic Great Red Spot and surrounding turbulent zones was captured by NASA's Juno spacecraft. The color-enhanced image is a combination of three separate images taken on April 1 between 3:09 a.m. PDT (6:09 a.m. EDT) ",
+    "width": 0,
+    "height": 0,
+    "license": "Public domain (NASA)",
+    "page": "https://images.nasa.gov/details/PIA21985",
+    "preview_size": [
+     640,
+     418
+    ]
+   },
+   {
+    "ref": "commons:File:Jupiter Showcases Auroras, Hazes (NIRCam Closeup).jpg",
+    "source": "Wikimedia Commons",
+    "title": "Jupiter Showcases Auroras, Hazes (NIRCam Closeup)",
+    "artist": "NASA's James Webb Space Telescope. Image processing by Judy Schmidt.",
+    "date": "2022-07-27",
+    "description": "Jupiter dominates the black background of space. The image is a composite, and shows Jupiter in enhanced color, featuring the planet’s turbulent Great Red Spot, which appears white here. The planet is striated with swirling horizontal strip",
+    "width": 1646,
+    "height": 1561,
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Jupiter_Showcases_Auroras,_Hazes_(NIRCam_Closeup).jpg",
+    "preview_size": null
+   },
+   {
+    "ref": "nasaid:PIA01370",
+    "source": "NASA",
+    "title": "Jupiter Great Red Spot",
+    "artist": "JPL",
+    "date": "1998-12-05",
+    "description": "Jupiter Great Red Spot",
+    "width": 0,
+    "height": 0,
+    "license": "Public domain (NASA)",
+    "page": "https://images.nasa.gov/details/PIA01370",
+    "preview_size": [
+     556,
+     640
+    ]
+   },
+   {
+    "ref": "commons:File:Jupiter - Great Red Spot - PJ7-60 61 62 - Balanced (49803032983).png",
+    "source": "Wikimedia Commons",
+    "title": "Jupiter - Great Red Spot - PJ7-60 61 62 - Balanced (49803032983)",
+    "artist": "Kevin Gill from Los Angeles, CA, United States",
+    "date": "2020-04-21 19:12",
+    "description": "JNCE_2017192_07C00060_V01 JNCE_2017192_07C00061_V01 JNCE_2017192_07C00062_V01 NASA/JPL-Caltech/SwRI/MSSS/Kevin M. Gill",
+    "width": 2966,
+    "height": 1954,
+    "license": "CC BY 2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jupiter_-_Great_Red_Spot_-_PJ7-60_61_62_-_Balanced_(49803032983).png",
+    "preview_size": null
+   },
+   {
+    "ref": "nasaid:PIA01083",
+    "source": "NASA",
+    "title": "Dynamics of Jupiter's Great Red Spot in the Near-infrared",
+    "artist": "JPL",
+    "date": "1997-11-04",
+    "description": "Dynamics of Jupiter's Great Red Spot in the NIR filter (756 nm) of the Galileo imaging system. Each of the three frames is a mosaic of six images that have been map-projected to a uniform grid of latitude and longitude. North is at the top.",
+    "width": 0,
+    "height": 0,
+    "license": "Public domain (NASA)",
+    "page": "https://images.nasa.gov/details/PIA01083",
+    "preview_size": [
+     640,
+     478
+    ]
+   },
+   {
+    "ref": "commons:File:Jupiter and the Great Red Spot - Juno Perijove 7.png",
+    "source": "Wikimedia Commons",
+    "title": "Jupiter and the Great Red Spot - Juno Perijove 7",
+    "artist": "NASA/JPL-Caltech/MSSS/SwRI/Kevin M. Gill",
+    "date": "2017-07-11",
+    "description": "The Great Red Spot as seen by the Juno spacecraft in July 2017.",
+    "width": 1592,
+    "height": 3163,
+    "license": "Public domain",
+    "page": "https://commons.wikimedia.org/wiki/File:Jupiter_and_the_Great_Red_Spot_-_Juno_Perijove_7.png",
+    "preview_size": null
+   }
+  ]
+ }
+}
