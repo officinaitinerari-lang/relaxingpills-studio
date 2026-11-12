@@ -16,9 +16,10 @@ scenes:
 - id: s003
   text: A starry night sky over a dark, quiet landscape, with one bright planet
   queries:
-  - night sky painting stars
-  - starry night landscape painting
-  - Jupiter bright planet night sky
+  - Van Gogh Starry Night Over the Rhone
+  - Caspar David Friedrich night landscape moon
+  - nocturne landscape stars painting
+  rerun: true
 - id: s004
   text: An ancient Greek astronomer studying the sky
   queries:
@@ -76,9 +77,10 @@ scenes:
 - id: s013
   text: Galileo's handwritten sketches of Jupiter and its moons
   queries:
-  - Galileo Jupiter moons drawing manuscript
-  - Galileo notes Medicean stars
-  - Sidereus Nuncius Jupiter diagram
+  - Galileo manuscript Jupiter satellites
+  - Galileo Medicean stars drawing 1610
+  - Sidereus Nuncius Jupiter satellites observations page
+  rerun: true
 - id: s014
   text: Title page of Sidereus Nuncius, 1610
   queries:
@@ -118,9 +120,10 @@ scenes:
 - id: s020
   text: A historical diagram of Rømer's method, the Earth's orbit and Jupiter
   queries:
-  - Rømer speed of light diagram
-  - Roemer Io eclipse diagram
-  - Journal des sçavans 1676 Roemer
+  - Romer 1676 Journal des sçavans
+  - Demonstration touchant le mouvement de la lumiere
+  - Romer speed of light illustration
+  rerun: true
 - id: s021
   text: Jupiter and Earth shown side by side to compare their sizes
   queries:
@@ -152,10 +155,11 @@ scenes:
 - id: s025
   text: Jupiter's orbit around the Sun, far beyond the Earth and Mars
   queries:
-  - Jupiter orbit diagram
-  - inner and outer solar system orbits
-  - solar system orbits diagram
+  - Jupiter orbit solar system diagram NASA
+  - outer solar system orbits illustration
+  - solar system orbits Jupiter Saturn diagram
   science: true
+  rerun: true
 - id: s026
   text: Sunlight falling on Jupiter's clouds, seen from a spacecraft
   queries:
@@ -270,9 +274,10 @@ scenes:
 - id: s042
   text: An old telescope drawing of Jupiter from the 18th or 19th century
   queries:
-  - Jupiter drawing 19th century
-  - Trouvelot Jupiter
-  - Jupiter astronomical drawing
+  - Jupiter drawing 19th century astronomer
+  - Jupiter telescopic drawing 1870
+  - Jupiter sketch Great Red Spot 1879
+  rerun: true
 - id: s043
   text: Étienne Léopold Trouvelot's beautiful 19th century drawing of Jupiter
   queries:
@@ -310,10 +315,11 @@ scenes:
 - id: s048
   text: A cutaway diagram of Jupiter's interior layers
   queries:
-  - Jupiter interior diagram
-  - Jupiter internal structure
-  - Jupiter cutaway layers
+  - Gas Giant Interiors
+  - Jupiter interior structure illustration
+  - Jupiter cross section diagram
   science: true
+  rerun: true
 - id: s049
   text: Deep blue and dark tones of Jupiter's atmosphere seen near the poles
   queries:
@@ -506,10 +512,11 @@ scenes:
 - id: s076
   text: Callisto, the dark, heavily cratered moon
   queries:
-  - Callisto Galileo spacecraft
-  - Callisto moon
-  - Callisto Voyager
+  - Callisto true color Galileo
+  - Callisto moon full disk
+  - Callisto PIA03456
   science: true
+  rerun: true
 - id: s077
   text: Valhalla, the giant ring-shaped basin on Callisto
   queries:
@@ -604,17 +611,19 @@ scenes:
 - id: s090
   text: NASA's Europa Clipper spacecraft with its huge solar arrays
   queries:
-  - Europa Clipper spacecraft
-  - Europa Clipper illustration
-  - Europa Clipper solar arrays
+  - Europa Clipper artist concept
+  - Europa Clipper over Europa illustration
+  - Europa Clipper spacecraft Jupiter
   science: true
+  rerun: true
 - id: s091
   text: ESA's Juice spacecraft near Jupiter and its icy moons, illustration
   queries:
-  - JUICE spacecraft Ganymede
-  - Juice ESA illustration
-  - Jupiter Icy Moons Explorer
+  - JUICE spacecraft artist impression
+  - Juice spacecraft Jupiter Ganymede illustration
+  - Jupiter Icy Moons Explorer artist
   science: true
+  rerun: true
 - id: s092
   text: A quiet landscape at night under a sky full of stars, with a bright planet
   queries:
