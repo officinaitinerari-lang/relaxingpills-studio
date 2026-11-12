@@ -1,0 +1,670 @@
+scenes:
+- id: s001
+  text: Jupiter seen whole, calm and striped, floating in black space
+  queries:
+  - Jupiter full disk Hubble
+  - Jupiter Cassini global mosaic
+  - Jupiter true color
+  science: true
+- id: s002
+  text: Jupiter and its four large moons together, small and bright
+  queries:
+  - Jupiter Galilean moons montage
+  - Jupiter family portrait Voyager
+  - Jupiter with Io Europa Ganymede Callisto
+  science: true
+- id: s003
+  text: A starry night sky over a dark, quiet landscape, with one bright planet
+  queries:
+  - night sky painting stars
+  - starry night landscape painting
+  - Jupiter bright planet night sky
+- id: s004
+  text: An ancient Greek astronomer studying the sky
+  queries:
+  - ancient astronomer engraving
+  - Ptolemy astronomer engraving
+  - Greek astronomy painting
+- id: s005
+  text: Babylonian cuneiform clay tablet with astronomical writing
+  queries:
+  - Babylonian astronomical tablet British Museum
+  - cuneiform tablet astronomy
+  - Babylonian clay tablet
+- id: s006
+  text: The ruins or a reconstruction of ancient Babylon
+  queries:
+  - Babylon reconstruction painting
+  - Ishtar Gate Babylon
+  - ancient Babylon city
+- id: s007
+  text: A page of old geometry with shapes and lines
+  queries:
+  - medieval geometry manuscript
+  - Euclid geometry manuscript
+  - Oresme geometry diagram
+- id: s008
+  text: The Roman god Jupiter enthroned, in a classical painting or statue
+  queries:
+  - Jupiter god painting
+  - Jupiter Smyrna statue Louvre
+  - Ingres Jupiter and Thetis
+- id: s009
+  text: A Roman temple on a hill, the Capitoline, in a classical painting
+  queries:
+  - Capitoline Hill painting
+  - Temple of Jupiter Capitolinus reconstruction
+  - Roman temple painting
+- id: s010
+  text: A medieval or Renaissance chart of the planets and the heavens
+  queries:
+  - Harmonia Macrocosmica Cellarius
+  - Ptolemaic system chart
+  - celestial map Cellarius
+- id: s011
+  text: Portrait of Galileo Galilei
+  queries:
+  - Galileo Galilei portrait Sustermans
+  - Galileo portrait painting
+  - Galileo Galilei Ottavio Leoni
+- id: s012
+  text: Galileo's own telescopes in the Museo Galileo, Florence
+  queries:
+  - Galileo telescope Museo Galileo
+  - Galileo's telescopes Florence
+  - Galileo telescope
+- id: s013
+  text: Galileo's handwritten sketches of Jupiter and its moons
+  queries:
+  - Galileo Jupiter moons drawing manuscript
+  - Galileo notes Medicean stars
+  - Sidereus Nuncius Jupiter diagram
+- id: s014
+  text: Title page of Sidereus Nuncius, 1610
+  queries:
+  - Sidereus Nuncius title page
+  - Sidereus Nuncius 1610
+  - Galileo Sidereus Nuncius
+- id: s015
+  text: Florence in the 17th century, with the cathedral dome
+  queries:
+  - Florence view painting 17th century
+  - Florence Duomo painting
+  - view of Florence engraving
+- id: s016
+  text: A German astronomer of the 17th century, Simon Marius
+  queries:
+  - Simon Marius portrait
+  - Mundus Iovialis Marius
+  - Simon Marius engraving
+- id: s017
+  text: A classical painting of the myth of Io
+  queries:
+  - Correggio Jupiter and Io
+  - Io mythology painting
+  - Io and Jupiter painting
+- id: s018
+  text: The Paris Observatory in the 17th century
+  queries:
+  - Paris Observatory 17th century engraving
+  - Observatoire de Paris engraving
+  - Paris Observatory painting
+- id: s019
+  text: Portrait of the Danish astronomer Ole Rømer
+  queries:
+  - Ole Rømer portrait
+  - Ole Roemer painting
+  - Rømer astronomer
+- id: s020
+  text: A historical diagram of Rømer's method, the Earth's orbit and Jupiter
+  queries:
+  - Rømer speed of light diagram
+  - Roemer Io eclipse diagram
+  - Journal des sçavans 1676 Roemer
+- id: s021
+  text: Jupiter and Earth shown side by side to compare their sizes
+  queries:
+  - Jupiter Earth size comparison
+  - Earth and Jupiter to scale
+  - planets size comparison
+  science: true
+- id: s022
+  text: A wide view of all the planets of the Solar System to scale
+  queries:
+  - solar system planets to scale
+  - planets of the solar system montage
+  - solar system family portrait
+  science: true
+- id: s023
+  text: The Sun and Jupiter, the two largest bodies of the Solar System
+  queries:
+  - Sun SDO full disk
+  - Sun ultraviolet NASA
+  - Sun Jupiter comparison
+  science: true
+- id: s024
+  text: Jupiter's slightly flattened shape seen in a crisp telescope or spacecraft view
+  queries:
+  - Jupiter Hubble 2019
+  - Jupiter Hubble OPAL
+  - Jupiter Hubble portrait
+  science: true
+- id: s025
+  text: Jupiter's orbit around the Sun, far beyond the Earth and Mars
+  queries:
+  - Jupiter orbit diagram
+  - inner and outer solar system orbits
+  - solar system orbits diagram
+  science: true
+- id: s026
+  text: Sunlight falling on Jupiter's clouds, seen from a spacecraft
+  queries:
+  - Jupiter crescent Cassini
+  - Jupiter night side
+  - Jupiter crescent Juno
+  science: true
+- id: s027
+  text: Soft, pale sunlight on Jupiter's cloud tops in a close spacecraft view
+  queries:
+  - Jupiter clouds Juno close
+  - Jupiter cloud tops JunoCam
+  - Jupiter clouds close-up
+  science: true
+- id: s028
+  text: The deep, layered atmosphere of Jupiter seen at the planet's edge
+  queries:
+  - Jupiter limb Juno
+  - Jupiter atmosphere limb
+  - Jupiter edge haze
+  science: true
+- id: s029
+  text: Jupiter's many colored stripes in a detailed global view
+  queries:
+  - Jupiter Cassini global map
+  - Jupiter cylindrical map Cassini
+  - Jupiter belts zones map
+  science: true
+- id: s030
+  text: Jupiter's colorful bands of cloud in a sharp, detailed view
+  queries:
+  - Jupiter bands Hubble
+  - Jupiter Cassini bands
+  - Jupiter belts and zones
+  science: true
+- id: s031
+  text: Close view of the boundary between a light zone and a dark belt on Jupiter
+  queries:
+  - Jupiter belt zone close-up
+  - Jupiter clouds Voyager close
+  - Jupiter turbulent clouds
+  science: true
+- id: s032
+  text: Layers of Jupiter's atmosphere, high hazes and deeper clouds
+  queries:
+  - Jupiter atmosphere infrared
+  - Jupiter Gemini infrared
+  - Jupiter near infrared Hubble
+  science: true
+- id: s033
+  text: Swirling cloud patterns in Jupiter's atmosphere, like a painting
+  queries:
+  - Jupiter swirling clouds Juno
+  - Jupiter clouds Van Gogh
+  - JunoCam Jupiter clouds
+  science: true
+- id: s034
+  text: Jupiter's fast jet streams and long bands of moving cloud
+  queries:
+  - Jupiter jet streams
+  - Jupiter zonal winds
+  - Jupiter atmosphere animation frame
+  science: true
+- id: s035
+  text: The Juno spacecraft above Jupiter's clouds, in an artist's view
+  queries:
+  - Juno spacecraft Jupiter artist
+  - Juno over Jupiter illustration
+  - Juno spacecraft
+  science: true
+- id: s036
+  text: Lightning or bright storms flashing in Jupiter's clouds
+  queries:
+  - Jupiter lightning
+  - Jupiter storms Juno
+  - Jupiter thunderstorm clouds
+  science: true
+- id: s037
+  text: The Galileo atmospheric probe descending under its parachute, artist's view
+  queries:
+  - Galileo probe parachute Jupiter
+  - Galileo probe descent artist
+  - Galileo atmospheric probe
+  science: true
+- id: s038
+  text: The Galileo probe being prepared by engineers before launch
+  queries:
+  - Galileo probe NASA Ames
+  - Galileo probe heat shield
+  - Galileo probe hardware
+  science: true
+- id: s039
+  text: Jupiter's Great Red Spot in a detailed close view
+  queries:
+  - Great Red Spot Juno
+  - Great Red Spot Voyager 1
+  - Jupiter Great Red Spot Hubble
+  science: true
+- id: s040
+  text: The Great Red Spot seen by Voyager in 1979
+  queries:
+  - Voyager 1 Great Red Spot 1979
+  - Voyager Jupiter red spot
+  - Great Red Spot Voyager
+  science: true
+- id: s041
+  text: Portrait of the astronomer Giovanni Domenico Cassini
+  queries:
+  - Giovanni Domenico Cassini portrait
+  - Cassini astronomer painting
+  - Jean-Dominique Cassini
+- id: s042
+  text: An old telescope drawing of Jupiter from the 18th or 19th century
+  queries:
+  - Jupiter drawing 19th century
+  - Trouvelot Jupiter
+  - Jupiter astronomical drawing
+- id: s043
+  text: Étienne Léopold Trouvelot's beautiful 19th century drawing of Jupiter
+  queries:
+  - Trouvelot Jupiter pastel
+  - Trouvelot astronomical drawings Jupiter
+  - Jupiter 1880 drawing
+- id: s044
+  text: Hubble images showing the Great Red Spot becoming smaller over time
+  queries:
+  - Great Red Spot shrinking Hubble
+  - Great Red Spot comparison
+  - Hubble Great Red Spot 2014
+  science: true
+- id: s045
+  text: A three-dimensional view of the Great Red Spot from Juno data
+  queries:
+  - Great Red Spot depth Juno
+  - Juno Great Red Spot 3D
+  - Great Red Spot Juno microwave
+  science: true
+- id: s046
+  text: The red color of the Great Red Spot, close and rich in detail
+  queries:
+  - Great Red Spot enhanced color
+  - Great Red Spot JunoCam
+  - Jupiter red spot detail
+  science: true
+- id: s047
+  text: Jupiter's smaller red spot, Oval BA, the Little Red Spot
+  queries:
+  - Oval BA Jupiter
+  - Red Spot Junior
+  - Little Red Spot Hubble
+  science: true
+- id: s048
+  text: A cutaway diagram of Jupiter's interior layers
+  queries:
+  - Jupiter interior diagram
+  - Jupiter internal structure
+  - Jupiter cutaway layers
+  science: true
+- id: s049
+  text: Deep blue and dark tones of Jupiter's atmosphere seen near the poles
+  queries:
+  - Jupiter south pole Juno
+  - Jupiter blue polar region
+  - Jupiter pole JunoCam
+  science: true
+- id: s050
+  text: Jupiter's north pole seen from above, with its swirling storms
+  queries:
+  - Jupiter north pole Juno
+  - Jupiter north pole cyclones
+  - Juno north pole infrared
+  science: true
+- id: s051
+  text: A scientific illustration of Jupiter's dilute, fuzzy core
+  queries:
+  - Jupiter dilute core illustration
+  - Jupiter core Juno
+  - Jupiter fuzzy core
+  science: true
+- id: s052
+  text: Jupiter's warm glow in infrared light
+  queries:
+  - Jupiter infrared Webb
+  - Jupiter infrared glow
+  - Jupiter thermal infrared
+  science: true
+- id: s053
+  text: Jupiter's huge magnetic field shown as an illustration around the planet
+  queries:
+  - Jupiter magnetosphere illustration
+  - Jupiter magnetic field diagram
+  - Jupiter magnetosphere
+  science: true
+- id: s054
+  text: Jupiter's glowing ultraviolet auroras at the north pole, seen by Hubble
+  queries:
+  - Jupiter aurora Hubble
+  - Jupiter northern aurora ultraviolet
+  - Jupiter auroras
+  science: true
+- id: s055
+  text: Jupiter's auroras seen in infrared light by Juno
+  queries:
+  - Jupiter aurora Juno infrared
+  - Juno JIRAM aurora
+  - Jupiter south pole aurora
+  science: true
+- id: s056
+  text: A wide view of Jupiter's poles and swirling high latitudes
+  queries:
+  - Jupiter south pole Juno full
+  - Jupiter south pole cyclones
+  - Jupiter polar cyclones
+  science: true
+- id: s057
+  text: The ring of polar cyclones at Jupiter's south pole, from Juno
+  queries:
+  - Jupiter south pole cyclones infrared
+  - Juno cyclones south pole
+  - Jupiter polar storms pentagon
+  science: true
+- id: s058
+  text: A disk of gas and dust around a young star, where planets are born
+  queries:
+  - protoplanetary disk ALMA
+  - HL Tauri ALMA
+  - protoplanetary disk artist
+  science: true
+- id: s059
+  text: An artist's view of a giant planet forming in a dusty disk
+  queries:
+  - giant planet formation artist
+  - young gas giant protoplanetary disk illustration
+  - planet forming disk gap
+  science: true
+- id: s060
+  text: An iron meteorite, polished and etched, in a museum
+  queries:
+  - iron meteorite Widmanstätten
+  - iron meteorite museum
+  - Gibeon meteorite
+  science: true
+- id: s061
+  text: A ring gap in a planet-forming disk, as seen by a radio telescope
+  queries:
+  - ALMA protoplanetary disk rings
+  - HL Tauri rings
+  - ALMA disk gaps
+  science: true
+- id: s062
+  text: The asteroid belt between Mars and Jupiter, an illustration
+  queries:
+  - asteroid belt illustration
+  - main asteroid belt diagram
+  - asteroid belt artist
+  science: true
+- id: s063
+  text: A close view of an asteroid surface photographed by a spacecraft
+  queries:
+  - asteroid Vesta Dawn
+  - asteroid Ceres Dawn
+  - asteroid Ida Galileo
+  science: true
+- id: s064
+  text: The Trojan asteroids sharing Jupiter's orbit, a diagram
+  queries:
+  - Jupiter Trojan asteroids diagram
+  - Lucy mission Trojans
+  - Trojan asteroids orbit
+  science: true
+- id: s065
+  text: NASA's Lucy spacecraft with its large round solar arrays
+  queries:
+  - Lucy spacecraft
+  - Lucy mission spacecraft illustration
+  - Lucy solar arrays
+  science: true
+- id: s066
+  text: Jupiter's clouds with dark spots left by comet fragments in 1994, Hubble
+  queries:
+  - Shoemaker-Levy 9 Jupiter Hubble
+  - Jupiter impact sites 1994
+  - Comet Shoemaker-Levy 9
+  science: true
+- id: s067
+  text: A peaceful comet with a long tail in a dark night sky
+  queries:
+  - Comet Hale-Bopp
+  - comet painting night
+  - Comet NEOWISE
+  science: true
+- id: s068
+  text: The four Galilean moons side by side, to scale
+  queries:
+  - Galilean moons to scale
+  - Io Europa Ganymede Callisto montage
+  - Galilean satellites Galileo spacecraft
+  science: true
+- id: s069
+  text: Io, the volcanic moon, in full color, yellow and orange
+  queries:
+  - Io Galileo true color
+  - Io moon Galileo spacecraft
+  - Io Juno
+  science: true
+- id: s070
+  text: A volcanic plume rising above Io's horizon
+  queries:
+  - Io volcanic plume Galileo
+  - Io plume New Horizons
+  - Io Tvashtar plume
+  science: true
+- id: s071
+  text: Io passing in front of Jupiter, casting a small shadow
+  queries:
+  - Io transit Jupiter
+  - Io shadow on Jupiter
+  - Io above Jupiter clouds Cassini
+  science: true
+- id: s072
+  text: Europa, the icy moon, with its cracked and lined surface
+  queries:
+  - Europa Galileo spacecraft
+  - Europa moon Juno
+  - Europa full disk
+  science: true
+- id: s073
+  text: Close view of Europa's ice crust with ridges and broken ice blocks
+  queries:
+  - Europa Conamara Chaos
+  - Europa ice ridges close up
+  - Europa surface Galileo
+  science: true
+- id: s074
+  text: Ganymede, the largest moon in the Solar System
+  queries:
+  - Ganymede Juno
+  - Ganymede Galileo spacecraft
+  - Ganymede moon
+  science: true
+- id: s075
+  text: Close view of Ganymede's grooved terrain
+  queries:
+  - Ganymede grooved terrain
+  - Ganymede surface close up
+  - Ganymede Voyager
+  science: true
+- id: s076
+  text: Callisto, the dark, heavily cratered moon
+  queries:
+  - Callisto Galileo spacecraft
+  - Callisto moon
+  - Callisto Voyager
+  science: true
+- id: s077
+  text: Valhalla, the giant ring-shaped basin on Callisto
+  queries:
+  - Callisto Valhalla basin
+  - Callisto craters close
+  - Callisto surface Galileo
+  science: true
+- id: s078
+  text: Jupiter's small inner moon Amalthea, red and shaped like a potato
+  queries:
+  - Amalthea moon
+  - Amalthea Galileo
+  - Jupiter inner moons
+  science: true
+- id: s079
+  text: Jupiter's faint ring system, seen backlit by the Sun
+  queries:
+  - Jupiter rings Galileo
+  - Jupiter ring system New Horizons
+  - Jupiter main ring
+  science: true
+- id: s080
+  text: The Pioneer 10 spacecraft, with its large dish antenna
+  queries:
+  - Pioneer 10 spacecraft
+  - Pioneer 10 artist Jupiter
+  - Pioneer spacecraft
+  science: true
+- id: s081
+  text: Pioneer 10's early image of Jupiter
+  queries:
+  - Pioneer 10 Jupiter image
+  - Pioneer 11 Jupiter
+  - Pioneer Jupiter 1974
+  science: true
+- id: s082
+  text: A Voyager spacecraft in space, an illustration
+  queries:
+  - Voyager spacecraft illustration
+  - Voyager spacecraft NASA
+  - Voyager 1 artist
+  science: true
+- id: s083
+  text: Voyager 1's famous view of Jupiter with Io and Europa in front
+  queries:
+  - Voyager 1 Jupiter Io Europa
+  - Voyager Jupiter with moons
+  - Jupiter Io Europa 1979
+  science: true
+- id: s084
+  text: The Galileo spacecraft being prepared or launched from the Space Shuttle
+  queries:
+  - Galileo spacecraft Atlantis deployment
+  - Galileo spacecraft assembly
+  - Galileo orbiter
+  science: true
+- id: s085
+  text: The Galileo spacecraft orbiting Jupiter near Io, an illustration
+  queries:
+  - Galileo spacecraft Io artist
+  - Galileo orbiter Jupiter illustration
+  - Galileo at Jupiter
+  science: true
+- id: s086
+  text: The Cassini spacecraft's detailed portrait of Jupiter, 2000
+  queries:
+  - Cassini Jupiter portrait
+  - Cassini Jupiter mosaic 2000
+  - Jupiter Cassini true color
+  science: true
+- id: s087
+  text: The Juno spacecraft with its three long solar panels, before launch
+  queries:
+  - Juno spacecraft solar arrays
+  - Juno spacecraft assembly
+  - Juno spacecraft cleanroom
+  science: true
+- id: s088
+  text: A JunoCam image of Jupiter's swirling southern clouds, processed by a citizen scientist
+  queries:
+  - JunoCam Jupiter Andrea Luck
+  - JunoCam southern hemisphere
+  - JunoCam Jupiter Gerald Eichstadt
+  science: true
+- id: s089
+  text: Swirling blue clouds of Jupiter's southern hemisphere seen by Juno
+  queries:
+  - Jupiter southern hemisphere Juno
+  - Jupiter blue clouds JunoCam
+  - Jupiter swirls Juno
+  science: true
+- id: s090
+  text: NASA's Europa Clipper spacecraft with its huge solar arrays
+  queries:
+  - Europa Clipper spacecraft
+  - Europa Clipper illustration
+  - Europa Clipper solar arrays
+  science: true
+- id: s091
+  text: ESA's Juice spacecraft near Jupiter and its icy moons, illustration
+  queries:
+  - JUICE spacecraft Ganymede
+  - Juice ESA illustration
+  - Jupiter Icy Moons Explorer
+  science: true
+- id: s092
+  text: A quiet landscape at night under a sky full of stars, with a bright planet
+  queries:
+  - moonlit landscape painting
+  - nocturne landscape painting stars
+  - night landscape painting
+- id: s093
+  text: A view of Jupiter through a small telescope, with its moons in a line
+  queries:
+  - Jupiter moons amateur telescope
+  - Jupiter and Galilean moons
+  - Jupiter with moons photograph
+  science: true
+- id: s094
+  text: Galileo's handwritten observations of the moons of Jupiter, in ink
+  queries:
+  - Galileo manuscript Jupiter moons
+  - Galileo observations Medicean planets
+  - Galileo Jupiter notes 1610
+- id: s095
+  text: Jupiter and its moons, small and calm, in a wide dark field of space
+  queries:
+  - Jupiter moons Juno distant
+  - Jupiter Io Europa Cassini
+  - Jupiter distant view
+  science: true
+- id: s096
+  text: Jupiter's soft cloud bands, gentle colors, seen from far away
+  queries:
+  - Jupiter Hubble 2020
+  - Jupiter Hubble soft colors
+  - Jupiter Webb
+  science: true
+- id: s097
+  text: Europa or Ganymede's quiet icy surface, peaceful and pale
+  queries:
+  - Europa high resolution
+  - Europa Juno close up
+  - Ganymede Juno close
+  science: true
+- id: s098
+  text: The Earth seen from deep space, small and blue
+  queries:
+  - Pale Blue Dot
+  - Earth from Voyager
+  - Earth from space far
+  science: true
+- id: s099
+  text: A peaceful night sky full of stars over the sea
+  queries:
+  - night sea stars painting
+  - moonlight over the sea painting
+  - nocturne sea painting

@@ -1,0 +1,74 @@
+# Parole chiave (vidIQ, 12 nov 2026): principale "planet jupiter" (vol 55, concorrenza 43, ~5.000 ricerche/mese).
+# Secondarie: jupiter planet (vol 62, comp 40, ~13.000/mese), great red spot (comp 53), ganymede (comp 55),
+# europa (comp 50), gas giant. "jupiter for sleep" e "facts about jupiter" hanno volume quasi nullo; "jupiter" ha concorrenza 70.
+status: draft
+pillar: science
+publish_at: "2026-12-08T00:00Z"
+keyword: "planet jupiter"
+title: "Fall Asleep to Planet Jupiter, the Gentle Giant | Science for Sleep"
+description: |
+  Fall asleep to planet Jupiter, the gentle giant of our Solar System — real science, softly told, for sleep, study or relaxation.
+
+  Tonight we drift slowly toward the largest world that circles the Sun. We follow the Babylonian astronomers who traced its path on clay, and Galileo, who saw its four moons in 1610. We float past the soft cloud bands of this gas giant, rest beside the Great Red Spot, an old storm about as wide as the Earth, and sink gently into its deep ocean of hydrogen.
+
+  Then we visit its family of moons: volcanic Io, icy Europa with its hidden ocean, Ganymede, the largest moon in the Solar System, and quiet Callisto. Everything about the Jupiter planet, told slowly: a calm journey with Pioneer, Voyager, Galileo and Juno, as the gentle giant keeps turning far away in the dark.
+tags: ["planet jupiter", "jupiter planet", "jupiter for sleep", "great red spot", "jupiter moons", "europa", "ganymede", "gas giant", "solar system", "facts to fall asleep to", "fall asleep to science", "science for sleep", "space documentary for sleep", "sleep documentary", "calm narration"]
+hashtags: ["jupiter", "space", "scienceforsleep"]
+localizations:
+  es:
+    title: "Duérmete con el planeta Júpiter, el gigante amable | Ciencia para dormir"
+    description: "Duérmete con el planeta Júpiter, el gigante amable del sistema solar: ciencia real, contada con calma, para dormir, estudiar o relajarte. Bandas de nubes, la Gran Mancha Roja y las lunas Ío, Europa, Ganímedes y Calisto."
+  pt:
+    title: "Adormeça com o planeta Júpiter, o gigante gentil | Ciência para dormir"
+    description: "Adormeça com o planeta Júpiter, o gigante gentil do Sistema Solar: ciência real, contada com suavidade, para dormir, estudar ou relaxar. Faixas de nuvens, a Grande Mancha Vermelha e as luas Io, Europa, Ganimedes e Calisto."
+  fr:
+    title: "Endormez-vous avec la planète Jupiter, le géant paisible | Science pour dormir"
+    description: "Endormez-vous avec la planète Jupiter, le géant paisible du système solaire : de la vraie science, racontée en douceur, pour dormir, étudier ou se détendre. Bandes nuageuses, Grande Tache rouge et lunes Io, Europe, Ganymède et Callisto."
+  de:
+    title: "Schlaf ein mit dem Planeten Jupiter, dem sanften Riesen | Wissenschaft zum Einschlafen"
+    description: "Schlaf ein mit dem Planeten Jupiter, dem sanften Riesen unseres Sonnensystems: echte Wissenschaft, ruhig erzählt, zum Schlafen, Lernen oder Entspannen. Wolkenbänder, der Große Rote Fleck und die Monde Io, Europa, Ganymed und Kallisto."
+  it:
+    title: "Addormentati con il pianeta Giove, il gigante gentile | Scienza per dormire"
+    description: "Addormentati con il pianeta Giove, il gigante gentile del Sistema solare: scienza vera, raccontata con calma, per dormire, studiare o rilassarti. Bande di nubi, la Grande Macchia Rossa e le lune Io, Europa, Ganimede e Callisto."
+thumbnail:
+  text: "The Gentle Giant"
+  image: "pick:s001"
+sources:
+  - title: "NASA Science — Jupiter: Facts"
+    url: "https://science.nasa.gov/jupiter/jupiter-facts/"
+  - title: "NASA Science — Jupiter Moons"
+    url: "https://science.nasa.gov/jupiter/jupiter-moons/"
+  - title: "NASA Science — Jupiter Exploration"
+    url: "https://science.nasa.gov/jupiter/exploration/"
+  - title: "NASA Science — Galileo Jupiter Atmospheric Probe"
+    url: "https://science.nasa.gov/mission/galileo-jupiter-atmospheric-probe"
+  - title: "NASA Science — NASA's Juno Mission Redefines Size, Shape of Jupiter (Feb 2026)"
+    url: "https://science.nasa.gov/blogs/science-news/2026/02/04/nasas-juno-mission-redefines-size-shape-of-jupiter/"
+  - title: "NASA JPL — Liftoff! NASA's Europa Clipper Sails Toward Ocean Moon of Jupiter"
+    url: "https://www.jpl.nasa.gov/news/liftoff-nasas-europa-clipper-sails-toward-ocean-moon-of-jupiter"
+  - title: "Southwest Research Institute / Mission Juno — Jupiter's Great Red Spot: Both Deep and Wide"
+    url: "https://www.missionjuno.swri.edu/news/jupiter-s-great-red-spot-both-deep-and-wide"
+  - title: "ESA — The moons of Jupiter: what will Juice discover?"
+    url: "https://www.esa.int/Science_Exploration/Space_Science/Juice/The_moons_of_Jupiter_What_will_Juice_discover"
+  - title: "Encyclopaedia Britannica — Jupiter (planet)"
+    url: "https://www.britannica.com/place/Jupiter-planet"
+  - title: "Encyclopaedia Britannica — Galileo Galilei: Telescopic discoveries"
+    url: "https://www.britannica.com/biography/Galileo-Galilei/Telescopic-discoveries"
+  - title: "Encyclopaedia Britannica — Ole Rømer"
+    url: "https://www.britannica.com/biography/Ole-Romer"
+  - title: "Museo Galileo, Florence — Jupiter's moons (Medicea Sidera)"
+    url: "https://catalogue.museogalileo.it/indepth/JupitersMoonsSatellites.html"
+  - title: "Linda Hall Library — Scientist of the Day: Simon Marius"
+    url: "https://www.lindahall.org/about/news/scientist-of-the-day/simon-marius/"
+  - title: "AGU — Jupiter's Great Red Spot is not the same one Cassini observed in 1600s (Geophysical Research Letters, 2024)"
+    url: "https://news.agu.org/press-release/jupiters-great-red-spot-reborn-1800s/"
+  - title: "Kruijer et al., Age of Jupiter inferred from the distinct genetics of meteorites (PNAS, 2017) — via Phys.org"
+    url: "https://phys.org/news/2017-06-evidence-jupiter-oldest-planet-solar.html"
+  - title: "Ossendrijver, Ancient Babylonian astronomers calculated Jupiter's position from the area under a time-velocity graph (Science, 2016)"
+    url: "https://www.space.com/31765-ancient-babylonians-tracked-jupiter-with-math.html"
+  - title: "The Planetary Society — Jupiter; Lucy mission"
+    url: "https://www.planetary.org/worlds/jupiter"
+  - title: "DLR — En route to the Trojan asteroids in Jupiter's orbit (Lucy)"
+    url: "https://www.dlr.de/en/latest/news/2025/lucy-spacecraft-to-fly-by-asteroid-donaldjohanson-this-easter/en-route-to-the-trojan-asteroids-in-jupiter-s-orbit"
+  - title: "Astronomy Magazine — What has the Juno spacecraft taught us about Jupiter?"
+    url: "https://www.astronomy.com/science/what-has-the-juno-spacecraft-taught-us-about-jupiter/"
