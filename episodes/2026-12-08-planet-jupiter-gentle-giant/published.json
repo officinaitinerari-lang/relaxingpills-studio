@@ -1,0 +1,37 @@
+{
+  "long": {
+    "video_id": "UBifntziRXc",
+    "publish_at": "2026-12-08T00:00:00.000Z",
+    "uploaded_at": "2026-11-12T21:14:39+00:00",
+    "upload_status": "uploaded",
+    "privacy": "private",
+    "thumbnail": "ok",
+    "captions": "ok",
+    "playlist": "ok"
+  },
+  "shorts": {
+    "1": {
+      "video_id": "UNy2I5ehrUg",
+      "publish_at": "2026-12-09T17:00:00.000Z",
+      "uploaded_at": "2026-11-12T21:14:46+00:00",
+      "upload_status": "uploaded",
+      "privacy": "private"
+    },
+    "2": {
+      "video_id": "MC_sSnyC390",
+      "publish_at": "2026-12-12T17:00:00.000Z",
+      "uploaded_at": "2026-11-12T21:14:48+00:00",
+      "upload_status": "uploaded",
+      "privacy": "private"
+    },
+    "3": {
+      "video_id": "G0SeCHNQZnc",
+      "publish_at": "2026-12-13T17:00:00.000Z",
+      "uploaded_at": "2026-11-12T21:14:50+00:00",
+      "upload_status": "uploaded",
+      "privacy": "private"
+    }
+  },
+  "complete": true,
+  "updated_at": "2026-11-12T21:14:50+00:00"
+}
